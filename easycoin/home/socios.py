@@ -1,5 +1,6 @@
 import json
 from kucoin.client import Client
+from .models import Coins
 
 
 api_key = '621d6f9927c8800001b3e408'
@@ -10,7 +11,15 @@ class KucoinsClass:
 
 
     def kucoins_prises():
-        client = Client(api_key, api_secret, api_passphrase, {"verify": False, "timeout": 20})
-        tickets = client.get_ticker('BTC-USD')
-        print(tickets)
+        client = Client(api_key, api_secret, api_passphrase)
+        tickets = client.get_fiat_prices()
+        id = 0
+        for coin in tickets:
+            id +=1
+            symbol = coin
+            price=tickets[symbol]
+            Coins.objects.update_or_create(
+                id=id, Symbol=symbol,
+                defaults={'USD': price},
+            )
         return tickets
