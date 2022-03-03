@@ -19,7 +19,12 @@ class KucoinsClass:
             symbol = coin
             price=tickets[symbol]
             Coins.objects.update_or_create(
-                id=id, Symbol=symbol,
+                Symbol=symbol,
                 defaults={'USD': price},
             )
+        return tickets
+    
+    def kucoins_Symbols():
+        client = Client(api_key, api_secret, api_passphrase)
+        tickets = client.get_symbols()
         return tickets
