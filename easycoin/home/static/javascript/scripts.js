@@ -1,3 +1,6 @@
+const qs = require('querystring')
+const crypto = require('crypto')
+
 const Kucoin = {
     init: function(config) {
         let url = ''

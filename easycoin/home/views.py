@@ -25,9 +25,9 @@ def index(request):
             ).distinct()
         total = int(len(coins))-1
 
-        print(coins)
-        for num in coins[1]:
-            print(num)
+#        print(coins)
+#        for num in coins[1]:
+#            print(num)
 #           Symbol_append.append(symbol)
 #            price_append.append(price)
     elif not search:
