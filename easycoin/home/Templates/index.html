@@ -1,20 +1,21 @@
 {% extends 'base.html' %}
 {% block container %}
+<aside>
     <div class="row mt-3">
         <div class="col-4">
             <div class="card">
                 <div class="card-body">
                     {{HTML}}
                     {% if form %}
-                        <div class="input-group mb-3">
-                            {{ form.Have_Symbols }}
-                            {{ form.Have_amount }}
-                        </div>
-                        <div class="input-group mb-3">
-                            {{ form.Want_amount }}
-                            {{ form.Want_Symbols }}
-                        </div>
+                    <div class="input-group mb-3">
+                        {{ form.Have_Symbols }}
+                        {{ form.Have_amount }}
                     </div>
+                    <div class="input-group mb-3">
+                        {{ form.Want_amount }}
+                        {{ form.Want_Symbols }}
+                    </div>
+                </div>
                 {% endif %}
             </div>
         </div>
@@ -33,107 +34,102 @@
                     <div class="card">
                         <div class="card-body">
                             <form class="d-flex" action="{% url 'index' %}" method="GET">
-
-                                <input class="form-control me-2"
-                                       type="search"
-                                       placeholder="Search"
-                                       aria-label="Search"
-                                       name="Search">
-                                <button class="btn btn-outline-success" type="submit" >Search</button>
+    
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                    name="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
             {% if Symbols %}
-                <div class="container">
-                    <div class="row row-cols-2">
-                        <div class="col">
-                            {% for symbol in Symbols %}
-                                <div class="row">
-                                    <h6>{{ symbol }}</h6>
-                                </div>
-                                <hr>
-                            {% endfor %}
+            <div class="container">
+                <div class="row row-cols-2">
+                    <div class="col">
+                        {% for symbol in Symbols %}
+                        <div class="row">
+                            <h6>{{ symbol }}</h6>
                         </div>
-                        <div class="col">
-                            {% for price in prices %}
-                                <div class="row">
-                                    <h6>USD ${{ price }}</h6>
-                                </div>
-                                <hr>
-                            {% endfor %}
+                        <hr>
+                        {% endfor %}
+                    </div>
+                    <div class="col">
+                        {% for price in prices %}
+                        <div class="row">
+                            <h6>USD ${{ price }}</h6>
                         </div>
+                        <hr>
+                        {% endfor %}
                     </div>
                 </div>
+            </div>
             {% endif %}
         </div>
-        <div class = "container">
+        <div class="container">
             <div class="col-2">
                 {% if price %}
-                    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-                        <a href="/"
-                           class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-                            <svg class="bi me-2" width="30" height="24">
-                                <use xlink:href="#bootstrap"></use>
-                            </svg>
-                            <span class="fs-5 fw-semibold">Exchange</span>
-                        </a>
-                        <div class="list-group list-group-flush border-bottom scrollarea">
-                            {% for USD in price %}
-                                <div href="#"
-                                     class="list-group-item list-group-item-action active py-3 lh-tight"
-                                     aria-current="true">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <strong class="mb-1">USD {{ USD }}</strong>
-                                    </div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
-        </div>
-        <div class="col-2">
-            {% if symbols %}
                 <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
                     <a href="/"
-                       class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                        class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
                         <svg class="bi me-2" width="30" height="24">
                             <use xlink:href="#bootstrap"></use>
                         </svg>
                         <span class="fs-5 fw-semibold">Exchange</span>
                     </a>
                     <div class="list-group list-group-flush border-bottom scrollarea">
-                        {% for symbol in symbols %}
-                            <div href="#"
-                                 class="list-group-item list-group-item-action active py-3 lh-tight"
-                                 aria-current="true">
-                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                    <strong class="mb-1">{{ symbol }}</strong>
-                                </div>
+                        {% for USD in price %}
+                        <div href="#" class="list-group-item list-group-item-action active py-3 lh-tight"
+                            aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">USD {{ USD }}</strong>
                             </div>
+                        </div>
                         {% endfor %}
                     </div>
                 </div>
             </div>
+            {% endif %}
+        </div>
+        <div class="col-2">
+            {% if symbols %}
+            <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+                <a href="/"
+                    class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                    <svg class="bi me-2" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-5 fw-semibold">Exchange</span>
+                </a>
+                <div class="list-group list-group-flush border-bottom scrollarea">
+                    {% for symbol in symbols %}
+                    <div href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                            <strong class="mb-1">{{ symbol }}</strong>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
         {% endif %}
     </div>
-</div>
+</aside>
+
 {% if data %}
-    <div class="table-responsive">
-        <table class="table table-striped table-sm">
-            <thead>
-                <tr>
-                    {% for symbol in data %}<th scope="col">{{ symbol }}</th>{% endfor %}
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    {% for prices in price %}<td scope="col">{{ prices }}</td>{% endfor %}
-                </tbody>
-            </table>
-        </div>
-    {% endif %}
+<div class="table-responsive">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                {% for symbol in data %}<th scope="col">{{ symbol }}</th>{% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for prices in price %}<td scope="col">{{ prices }}</td>{% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
 </div>
 {% endblock %}

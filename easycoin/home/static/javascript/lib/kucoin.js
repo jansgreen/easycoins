@@ -36,7 +36,7 @@ const Kucoin = {
         } else {
             strForSign = nonce + method + endpoint + JSON.stringify(params)
         }
-        let signatureResult = .SHA512(this.secretKey)
+        let signatureResult = CryptoJS.SHA512(this.secretKey)
             .update(strForSign)
             .digest('base64')
         let passphraseResult = CryptoJS.SHA512(this.secretKey)
