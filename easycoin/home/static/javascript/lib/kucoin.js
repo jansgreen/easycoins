@@ -1,4 +1,9 @@
-console.log("test")
+import {user} from "./lib"
+import {trade} from "./lib"
+import {websockets} from "./lib"
+import {market} from "./lib"
+
+
 const Kucoin = {
     init: function(config) {
         let url = ''
@@ -12,10 +17,10 @@ const Kucoin = {
         this.secretKey = config.secretKey
         this.apiKey = config.apiKey
         this.passphrase = config.passphrase
-        const User = require('./lib/user')
-        const Market = require('./lib/market')
-        const Trade = require('./lib/trade')
-        const Sockets = require('./lib/websockets')
+        const User = require(user)
+        const Market = require(market)
+        const Trade = require(trade)
+        const Sockets = require(websockets)
         Object.assign(this, User, Market, Trade, Sockets)
     },
     sign: function(endpoint, params, method) {
@@ -30,12 +35,11 @@ const Kucoin = {
             strForSign = nonce + method + endpoint + this.formatQuery(params)
         } else {
             strForSign = nonce + method + endpoint + JSON.stringify(params)
-        } 
-
-        let signatureResult = Crypto.SHA256('sha256', this.secretKey)
+        }
+        let signatureResult = .SHA512(this.secretKey)
             .update(strForSign)
             .digest('base64')
-        let passphraseResult = Crypto.SHA256('sha256', this.secretKey)
+        let passphraseResult = CryptoJS.SHA512(this.secretKey)
             .update(this.passphrase)
             .digest('base64')
         header.headers['KC-API-SIGN'] = signatureResult
@@ -47,29 +51,11 @@ const Kucoin = {
     },
     formatQuery: function(queryObj) {
         if (JSON.stringify(queryObj).length !== 2) {
-
-            var vars = [], hash;
-            var hashes = queryObj;
-            for(var i = 0; i < hashes.length; i++)
-            {
-                hash = hashes[i].split('=');
-                vars.push(hash[0]);
-                vars[hash[0]] = hash[1];
-            }
-
-            console.log('?' + vars)
-
-            return '?' + vars
+            return '?' + qs.stringify(queryObj)
         } else {
             return ''
         }
     }
 }
 
-console.log(Kucoin)
-
-function getUrlVars()
-{
-
-    return vars;
-}
+module.exports = Kucoin

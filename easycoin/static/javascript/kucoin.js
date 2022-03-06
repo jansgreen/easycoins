@@ -1,4 +1,6 @@
-console.log("test")
+const qs = require('querystring')
+const CryptoJS = require("crypto-js");
+
 const Kucoin = {
     init: function(config) {
         let url = ''
@@ -30,12 +32,11 @@ const Kucoin = {
             strForSign = nonce + method + endpoint + this.formatQuery(params)
         } else {
             strForSign = nonce + method + endpoint + JSON.stringify(params)
-        } 
-
-        let signatureResult = Crypto.SHA256('sha256', this.secretKey)
+        }
+        let signatureResult = CryptoJS.SHA512(this.secretKey)
             .update(strForSign)
             .digest('base64')
-        let passphraseResult = Crypto.SHA256('sha256', this.secretKey)
+        let passphraseResult = CryptoJS.SHA512(this.secretKey)
             .update(this.passphrase)
             .digest('base64')
         header.headers['KC-API-SIGN'] = signatureResult
@@ -47,29 +48,11 @@ const Kucoin = {
     },
     formatQuery: function(queryObj) {
         if (JSON.stringify(queryObj).length !== 2) {
-
-            var vars = [], hash;
-            var hashes = queryObj;
-            for(var i = 0; i < hashes.length; i++)
-            {
-                hash = hashes[i].split('=');
-                vars.push(hash[0]);
-                vars[hash[0]] = hash[1];
-            }
-
-            console.log('?' + vars)
-
-            return '?' + vars
+            return '?' + qs.stringify(queryObj)
         } else {
             return ''
         }
     }
 }
 
-console.log(Kucoin)
-
-function getUrlVars()
-{
-
-    return vars;
-}
+module.exports = Kucoin
