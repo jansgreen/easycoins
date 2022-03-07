@@ -1,6 +1,3 @@
-var sockets = new WebSocket("wss://api.crypto.com/v2/public/get-book?instrument_name=BTC_USDT&timeframe=5m");
-console.log(sockets)
-
 const config = {
   apiKey: '621d6f9927c8800001b3e408',
   secretKey: '7906e97b-853e-4408-af59-79c7ac1c0d76',
@@ -8,34 +5,47 @@ const config = {
 //  environment: 'live'
 }
 
+var url = "https://api.kucoin.com/api/v1/bullet-public";
 
-const token = fetch("https://openapi-sandbox.kucoin.com/api/v1/risk/limit/strategy?marginModel=corss")
-console.log(token)
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url);
 
-let socket = new WebSocket("wss://api.crypto.com/v2/public/");
+xhr.setRequestHeader("Content-Length", "0");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+   console.log(xhr);
+
+xhr.send();
+
+
+let socket = new WebSocket("wss://push1-v2.kucoin.com");
 
 socket.onopen = function(e) {
-  alert("[open] Connection established");
-  alert("Sending to server");
-  socket.send("get-book?instrument_name=BTC_USDT&timeframe=5m");
+  console.log("[open] Connection established");
+  console.log("Sending to server");
+  socket.send("/api/v1/bullet-public");
 };
 
 socket.onmessage = function(event) {
-  alert(`[message] Data received from server: ${event.data}`);
+  console.log(`[message] Data received from server: ${event.data}`);
 };
 
 socket.onclose = function(event) {
   if (event.wasClean) {
-    alert(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+    console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
   } else {
     // e.g. server process killed or network down
     // event.code is usually 1006 in this case
-    alert('[close] Connection died');
+    console.log('[close] Connection died');
   }
 };
 
 socket.onerror = function(error) {
-  alert(`[error] ${error.message}`);
+  console.log();(`[error] ${error.message}`);
 };
 
 function URLbase(config) {

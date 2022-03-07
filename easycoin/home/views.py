@@ -6,6 +6,8 @@ from .models import Coins
 from .forms import BuyForm
 from django.db.models import Q
 from asgiref.sync import async_to_sync
+import requests
+from requests.structures import CaseInsensitiveDict
 
 
 # Create your views here.
@@ -48,7 +50,22 @@ def index(request):
             price_append.append(price)
 
 
+
+    url = "https://api.kucoin.com/api/v1/bullet-public"
+
+    headers = CaseInsensitiveDict()
+    headers["Content-Length"] = "0"
+
+    data_append = []
+    response = requests.post(url, headers=headers)
+    for resp in response:
+        data = resp #.decode(encoding="utf-8") [0][34:600]
+        print(data)#data_append.append(data)
+
+    print(data_append)
+
     context={
+        'resp':data_append,
         'form':form,
         'Symbols':Symbol_append,
         'prices': price_append,

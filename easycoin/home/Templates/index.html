@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% block container %}
-<aside>
+  {% if resp %}
+  {% for data in resp %}
+  {{data}}
+
+  {% endfor %}
+  {% endif %}
     <div class="row mt-3">
         <div class="col-4">
             <div class="card">
