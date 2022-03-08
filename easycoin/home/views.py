@@ -1,7 +1,8 @@
 import json
+import time
 from django.http import HttpResponse
 from django.shortcuts import render
-from .socios import kucoins_prises, kucoins_Symbols
+from .socios import kucoins_prises, kucoins_Symbols, token, AllTikets
 from .models import Coins
 from .forms import BuyForm
 from django.db.models import Q
@@ -20,7 +21,6 @@ def index(request):
     form = BuyForm
 
     search = request.GET.get("Search")
-    print(search)
     if search:
         coins = Coins.objects.filter(
             Q(Symbol__icontains = search) | Q(USD__icontains = search)
@@ -50,22 +50,13 @@ def index(request):
             price_append.append(price)
 
 
-
-    url = "https://api.kucoin.com/api/v1/bullet-public"
-
-    headers = CaseInsensitiveDict()
-    headers["Content-Length"] = "0"
-
-    data_append = []
-    response = requests.post(url, headers=headers)
-    for resp in response:
-        data = resp #.decode(encoding="utf-8") [0][34:600]
-        print(data)#data_append.append(data)
-
-    print(data_append)
+    TokenObj = token()
+    AllTiket = AllTikets()
+    print(AllTiket)
 
     context={
-        'resp':data_append,
+        'connectId':TokenObj['timestamp'],
+        'token':TokenObj['token'],
         'form':form,
         'Symbols':Symbol_append,
         'prices': price_append,

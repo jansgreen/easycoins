@@ -2,6 +2,10 @@ import json
 from kucoin.client import Client
 from .models import Coins
 from asgiref.sync import async_to_sync
+import time
+import pprint
+
+
 
 
 
@@ -30,3 +34,23 @@ def kucoins_Symbols():
     client = Client(api_key, api_secret, api_passphrase)
     tickets = client.get_symbols()
     return tickets
+
+def token():
+    client = Client(api_key, api_secret, api_passphrase)
+    TokenObject = client.get_ws_endpoint(private=False) #.get_symbols()
+    timestamp = client.get_timestamp()
+       
+    context ={
+        'token':TokenObject['token'],
+        'timestamp':timestamp
+
+    }
+    return context
+
+def AllTikets():
+
+    client = Client(api_key, api_secret, api_passphrase)
+    tikers = client.get_symbols()
+    symbols = pprint.pformat(tikers)
+    for n in symbols:
+        print(n)

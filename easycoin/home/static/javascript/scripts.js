@@ -5,29 +5,26 @@ const config = {
 //  environment: 'live'
 }
 
-var url = "https://api.kucoin.com/api/v1/bullet-public";
 
-var xhr = new XMLHttpRequest();
-xhr.open("POST", url);
-
-xhr.setRequestHeader("Content-Length", "0");
-
-xhr.onreadystatechange = function () {
-   if (xhr.readyState === 4) {
-      console.log(xhr.status);
-      console.log(xhr.responseText);
-   }};
-   console.log(xhr);
-
-xhr.send();
+var token = $("#TokenId").val();
+var connectId = $("#connectId").val();
 
 
-let socket = new WebSocket("wss://push1-v2.kucoin.com");
+urlSocket = "wss://ws-api.kucoin.com/endpoint/token="+token+"&[connectId="+connectId+"]"
+
+let socket = new WebSocket(urlSocket);
 
 socket.onopen = function(e) {
   console.log("[open] Connection established");
   console.log("Sending to server");
-  socket.send("/api/v1/bullet-public");
+  socket.send(
+    {
+      "id": connectId,
+      "type": "subscribe",
+      "topic": "/market/ticker:BTC-USDT",
+      "response": true
+  }
+  );
 };
 
 socket.onmessage = function(event) {

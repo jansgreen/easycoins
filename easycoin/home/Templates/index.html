@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 {% block container %}
-  {% if resp %}
-  {% for data in resp %}
-  {{data}}
+  {% if token %}
+  <input type="text" class="visually-hidden" id="TokenId" name="KucoinToken" value="{{token}}">
+  <input type="text"  class="visually-hidden" id="connectId" name="connectId" value="{{connectId | floatformat }}">
 
-  {% endfor %}
   {% endif %}
     <div class="row mt-3">
         <div class="col-4">
