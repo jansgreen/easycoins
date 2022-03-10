@@ -3,11 +3,11 @@ from .models import Coins
 
 # Register your models here.
 class CoinsAdmin(admin.ModelAdmin):
-    fields = ['id','Symbol', 'USD']
+    fields = ['id', 'symbol']
     list_display = (
         'id',
-        'Symbol',
-        'USD',
+        'symbol',
+        
     )
 
 admin.site.register(Coins, CoinsAdmin)

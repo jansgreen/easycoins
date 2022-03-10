@@ -21,12 +21,17 @@ def kucoins_prises():
     for coin in tickets:
         id +=1
         symbol = str(coin)
-        price=str(tickets[symbol])
-        Coins.objects.update_or_create(
+
+        newCoins = Coins(
             id = id,
-            Symbol = symbol,
-            defaults= {'USD': price},
+            symbol = symbol
         )
+#            id = str(id),
+#            symbol = str(symbol),
+#            Web = "Kucoins",
+            
+#        )
+        newCoins.save()
                          
     return tickets
     
@@ -52,5 +57,3 @@ def AllTikets():
     client = Client(api_key, api_secret, api_passphrase)
     tikers = client.get_symbols()
     symbols = pprint.pformat(tikers)
-    for n in symbols:
-        print(n)
