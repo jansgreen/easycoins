@@ -1,76 +1,116 @@
 {% extends 'base.html' %}
 {% block container %}
-    <div class="row mt-3">
+    <div class="row mt-3 opacity-75">
         <div class="col-4">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body rounded border border-3 border-info">
                     {% if form %}
-                        <div class="input-group mb-3">
-                            {{ form.Have_Symbols }}
-                            {{ form.Have_amount }}
+                        <div class="row justify-content-md-center mb-3">
+                            <div class="input-group mb-3">
+                                {{ form.Have_Symbols }}
+                                {{ form.Have_amount }}
+                            </div>
+                            <div class="input-group mb-3">
+                                {{ form.Want_amount }}
+                                {{ form.Want_Symbols }}
+                            </div>
                         </div>
-                        <div class="input-group mb-3">
-                            {{ form.Want_amount }}
-                            {{ form.Want_Symbols }}
+                        <div class ="container">
+                            <div class="row justify-content-md-center mb-3">
+                                <button type="button" class="btn btn-success">Buy Now!</button>
+                            </div>
                         </div>
-                    </div>
-                {% endif %}
+                    {% endif %}
+                </div>
             </div>
         </div>
         <div class="col-8">
-            <div class="container">
-                <form class = "card" action="{% url 'index' %}" method="GET">
-                    <div class="row justify-content-md-center">
-                        <div class = "col-8 ">
-                            <div class="card-body">
-                                <input class="form-control me-2"
-                                       type="search"
-                                       placeholder="Search"
-                                       aria-label="Search"
-                                       name="Search">
-                                <button class="btn btn-outline-success" type="submit">CriptoCoins</button>
+            <div class="container ">
+                <div class="card rounded border border-3 border-info">
+                    <form action="{% url 'index' %}"      method="GET">
+                        <div class="row justify-content-md-center">
+                            <div class = "col-8 ">
+                                <div class="card-body">
+                                    <input class="form-control me-2"
+                                           type="search"
+                                           placeholder="Search for your cryptocurrency or token"
+                                           aria-label="Search"
+                                           name="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-md-center">
-                        <div class="col-3">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input"
-                                       type="checkbox"
-                                       role="switch"
-                                       id="{%if checkedswitch == "USD"%}flexSwitchCheckChecked {% else%} flexSwitchCheckDefault{%endif%}"
-                                       name="USD"
-                                       Cheched>
-                                <label class="form-check-label" for="{%if checkedswitch == 'USD'%}flexSwitchCheckChecked {% else%} flexSwitchCheckDefault{%endif%}">USD $ {% if checkedswitch == 'DOP' %} flexSwitchCheckChecked{% else %} flexSwitchCheckDefault {% endif %}</label>
+                        <div class="row justify-content-md-center mb-3">
+                            <div class="col-3">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input"
+                                           type="checkbox"
+                                           role="switch"
+                                           id="flexSwitchCheckDefault"
+                                           name="USD"
+                                           {% if checkedswitch == 'USD' %} checked{% endif %}>
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">USD $ <strong class="mb-1">'Dollar'</strong></label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input"
+                                           type="checkbox"
+                                           role="switch"
+                                           id="flexSwitchCheckDefault"
+                                           name="EUR"
+                                           {% if checkedswitch == 'EUR' %} checked{% endif %}>
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">EUR € <strong class="mb-1">'Euro'</strong> </label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input"
+                                           type="checkbox"
+                                           role="switch"
+                                           id
+                                           flexSwitchCheckDefault
+                                           name="DOP"
+                                           {% if checkedswitch == 'DOP' %} checked{% endif %}>
+                                    <label class="flexSwitchCheckDefault">DOP $<strong class="mb-1">'Peso Dominicano'</strong></label>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input"
-                                       type="checkbox"
-                                       role="switch"
-                                       id="{%if checkedswitch == "EUR"%}flexSwitchCheckChecked {% else%} flexSwitchCheckDefault{%endif%}"
-                                       name="EUR">
-                                <label class="form-check-label" for="{%if checkedswitch == "EUR"%}flexSwitchCheckChecked {% else%} flexSwitchCheckDefault{%endif%}">EUR €</label>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input"
-                                       type="checkbox"
-                                       role="switch"
-                                       id= {% if checkedswitch == "DOP" %} "flexSwitchCheckChecked" {% else%} "flexSwitchCheckDefault" {% endif %}
-                                       name="DOP">
-                                <label class="form-check-label" for={% if checkedswitch == "DOP" %} "flexSwitchCheckChecked" {% else %} "flexSwitchCheckDefault" {% endif %}>DOP $</label>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-            <div class="row card">
-                {% if Symbols %}
-                    <div class="container">
-                        <div class="row row-cols-2">
+            <div class="row card mt-3 rounded border border-3 border-info">
+                <div class="container">
+                    {% if Fiat %}
+                        <div class="row row-cols-2 mt-3 mb-3">
+                            <div class="col">
+                                <div class="row">
+                                    <h6>{{ search }}</h6>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <h6>{{ Fiat }}</h6>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div class="row row-cols-4 mt-3">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+                            <div class="col">
+                                <div class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                                    <svg class="bi me-2" width="30" height="24">
+                                        <use xlink:href="#bootstrap"></use>
+                                    </svg>
+                                    <span class="fs-5 fw-semibold">Exchange</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-4 mt-3">
+                        {% if Symbols %}
                             <div class="col">
                                 {% for symbol in Symbols %}
                                     <div class="row">
@@ -79,67 +119,56 @@
                                     <hr>
                                 {% endfor %}
                             </div>
+                        {% endif %}
+                        {% if EURPrice and USDprice and DOPPrice %}
                             <div class="col">
-                                {% for price in prices %}
+                                {% for price in USDprice %}
                                     <div class="row">
-                                        <h6>USD ${{ price }}</h6>
+                                        <div class="list-group list-group-flush border-bottom scrollarea">
+                                            <div class="list-group-item list-group-item-action list-group-item-primary py-3 lh-tight"
+                                                 aria-current="true">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1">USD ${{ price }}</strong>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <hr>
                                 {% endfor %}
                             </div>
-                        </div>
-                    </div>
-                {% endif %}
-                <div class="row">
-                    <div class="col-2">
-                        {% if price %}
-                            <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-                                <a href="/"
-                                   class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-                                    <svg class="bi me-2" width="30" height="24">
-                                        <use xlink:href="#bootstrap"></use>
-                                    </svg>
-                                    <span class="fs-5 fw-semibold">Exchange</span>
-                                </a>
-                                <div class="list-group list-group-flush border-bottom scrollarea">
-                                    {% for USD in price %}
-                                        <div href="#"
-                                             class="list-group-item list-group-item-action active py-3 lh-tight"
-                                             aria-current="true">
-                                            <div class="d-flex w-100 align-items-center justify-content-between">
-                                                <strong class="mb-1">USD {{ USD }}</strong>
+                            <div class="col">
+                                {% for price in EURPrice %}
+                                    <div class="row">
+                                        <div class="list-group list-group-flush border-bottom scrollarea">
+                                            <div class="list-group-item list-group-item-action list-group-item-success py-3 lh-tight"
+                                                 aria-current="true">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1">EUR €{{ price }}</strong>
+                                                </div>
                                             </div>
                                         </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    {% endif %}
-                </div>
-                <div class="col-2">
-                    {% if symbols %}
-                        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-                            <a href="/"
-                               class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-                                <svg class="bi me-2" width="30" height="24">
-                                    <use xlink:href="#bootstrap"></use>
-                                </svg>
-                                <span class="fs-5 fw-semibold">Exchange</span>
-                            </a>
-                            <div class="list-group list-group-flush border-bottom scrollarea">
-                                {% for symbol in symbols %}
-                                    <div href="#"
-                                         class="list-group-item list-group-item-action active py-3 lh-tight"
-                                         aria-current="true">
-                                        <div class="d-flex w-100 align-items-center justify-content-between">
-                                            <strong class="mb-1">{{ symbol }}</strong>
-                                        </div>
                                     </div>
+                                    <hr>
                                 {% endfor %}
                             </div>
-                        </div>
+                            <div class="col">
+                                {% for price in DOPPrice %}
+                                    <div class="row">
+                                        <div class="list-group list-group-flush border-bottom scrollarea">
+                                            <div class="list-group-item list-group-item-action list-group-item-warning py-3 lh-tight"
+                                                 aria-current="true">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1">DOP ${{ price }}</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
-                {% endif %}
+                </div>
             </div>
         </div>
     </div>
