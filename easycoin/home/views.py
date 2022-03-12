@@ -14,6 +14,8 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from kucoin.client import Client
 from .addCoinsSym import kucoins_fixtures
+from decimal import *
+
 
 
 
@@ -35,6 +37,7 @@ def index(request):
 #    response_symbol = kucoins_Symbols()
 #    response_prices = kucoins_prises()
     form = BuyForm
+    DOP_tickets = client.get_fiat_prices()
     USD_tickets = client.get_fiat_prices()
     EUR_tickets = client.get_fiat_prices("EUR")
 
@@ -59,15 +62,13 @@ def index(request):
             EURPri = EUR_tickets[EuPrices]
         EURPrice_append.append(EURPri)
 
-    for prices in USD_tickets:
-        if int(float(USD_tickets[prices])) >= 1.00: 
-            USD_to_DOP = int(float(USD_tickets[prices])* 56.00) 
-            DOP_Roun = round(USD_to_DOP, 2)
+    for prices in DOP_tickets:
+        if int(float(DOP_tickets[prices])) >= 1: 
+            USD_to_DOP = Decimal(DOP_tickets[prices])*Decimal(56)
+            DOP_Roun = round(int(float(USD_to_DOP)), 2)
 
-        elif int(float(USD_tickets[prices])) == 0:
-            DOP_Roun = 56.12*1
         else:
-            DOP_Roun = int(56.0000 * float(USD_tickets[prices]))
+            DOP_Roun = Decimal(DOP_tickets[prices])*Decimal(56)
         DOPPrice_append.append(DOP_Roun)
 
 
@@ -83,11 +84,9 @@ def index(request):
             coins = client.get_fiat_prices('USD')
             checkedswitch = "DOP"
             if int(float(coins[search_upper])) >= 1.00: 
-                DOPFiat = int(float(coins[search_upper])* 56.00) 
-                Fiat = "DOP $" + str(round(DOPFiat, 2))
+                DOPFiat = Decimal(DOP_tickets[prices])*Decimal(56) 
+                Fiat = "DOP $" + str(round(float(DOPFiat), 2))
 
-            elif int(float(USD_tickets[prices])) == 0:
-                Fiat = "DOP $" + str(56.12*1)
             else:
                 Fiat = "DOP $" + coins[search_upper]
 
@@ -98,7 +97,7 @@ def index(request):
             checkedswitch = "EUR"
             if int(float(coins[search_upper])) >= 1.00: 
                 DOPFiat = int(float(coins[search_upper]))
-                Fiat = round(DOPFiat, 2)
+                Fiat = "EUR €" + str(round(DOPFiat, 2))
             else:
                 Fiat = "EUR €" + coins[search_upper]
         else:
@@ -107,7 +106,7 @@ def index(request):
             Fiat = "USD $" + coins[search_upper]
             if int(float(coins[search_upper])) >= 1.00: 
                 DOPFiat = int(float(coins[search_upper]))
-                Fiat = round(DOPFiat, 2)
+                Fiat = "USD $" + str(round(DOPFiat, 2))
             else:
                 Fiat = "USD $" + coins[search_upper]
 
