@@ -1,9 +1,10 @@
+#from crypt import methods
 from decimal import Rounded
 import json
 from ntpath import join
 import time
 from unicodedata import digit
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from .socios import kucoins_prises, kucoins_Symbols, token, AllTikets
 from .models import Coins
@@ -50,9 +51,14 @@ def index(request):
         if int(float(USD_tickets[prices])) >= 1.00: 
             USD_Deci = int(float(USD_tickets[prices]))
             USD_Roun = round(USD_Deci, 2)
+            USD_to_DOP = USD_Roun * 56
+            DOP_Roun = USD_to_DOP
         else:
             USD_Roun = USD_tickets[prices]
+            DOP_Roun = Decimal(USD_tickets[prices])*Decimal(56)
+
         USDPrice_append.append(USD_Roun)
+        DOPPrice_append.append(DOP_Roun)
 
     for EuPrices in EUR_tickets:
         if int(float(EUR_tickets[EuPrices])) >= 1.00: 
@@ -62,19 +68,11 @@ def index(request):
             EURPri = EUR_tickets[EuPrices]
         EURPrice_append.append(EURPri)
 
-    for prices in DOP_tickets:
-        if int(float(DOP_tickets[prices])) >= 1: 
-            USD_to_DOP = Decimal(DOP_tickets[prices])*Decimal(56)
-            DOP_Roun = round(int(float(USD_to_DOP)), 2)
-
-        else:
-            DOP_Roun = Decimal(DOP_tickets[prices])*Decimal(56)
-        DOPPrice_append.append(DOP_Roun)
 
 
+# buscar una criptomoneda
 
     search = request.GET.get("Search")
-    USDResquest = request.GET.get("USD")
     EURRequest = request.GET.get("EUR")
     DOPRequest = request.GET.get("DOP")
 
@@ -84,14 +82,11 @@ def index(request):
             coins = client.get_fiat_prices('USD')
             checkedswitch = "DOP"
             if int(float(coins[search_upper])) >= 1.00: 
-                DOPFiat = Decimal(DOP_tickets[prices])*Decimal(56) 
+                print(Decimal(coins[search_upper]))
+                DOPFiat = Decimal(coins[search_upper])*Decimal(56) 
                 Fiat = "DOP $" + str(round(float(DOPFiat), 2))
-
             else:
                 Fiat = "DOP $" + coins[search_upper]
-
-
-
         elif EURRequest =="on":
             coins = client.get_fiat_prices('EUR')
             checkedswitch = "EUR"
@@ -129,5 +124,17 @@ def index(request):
         'DOPPrice':DOPPrice_append,
 
     }
-
     return render(request, 'index.html', context)
+
+
+
+def Processexchange(request):
+    if request.method == 'POST':
+        print(request.POST)
+#        HaveSymbols = 
+#        HaveAmount = 
+#        WantSymbols =
+#        WantAmount = 
+    return HttpResponseRedirect('/thanks/')
+
+

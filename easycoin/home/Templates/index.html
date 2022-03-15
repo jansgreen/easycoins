@@ -14,6 +14,8 @@
                     </div>
                 </div>
                 <div class="card-body ">
+                    <form action="{% url 'Processexchange' %}" method="POST">
+
                     {% if form %}
                         <div class="row justify-content-md-center mb-3">
                             <div class="input-group mb-3">
@@ -31,6 +33,7 @@
                             </div>
                         </div>
                     {% endif %}
+                    </form>
                 </div>
             </div>
         </div>
@@ -130,57 +133,80 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-cols-4 mt-3">
+                    <div class="row row-cols-4 mt-3 justify-content-center ">
                         {% if Symbols %}
-                            <div class="col">
+                            <div class="col-5">
                                 {% for symbol in Symbols %}
                                     <div class="row">
-                                        <h6>{{ symbol }}</h6>
+                                        <div class="list-group list-group-flush border-bottom scrollarea">
+                                            <div class="list-group-item list-group-item-action list-group-item-dark py-3 lh-tight"
+                                                 aria-current="true">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1">{{ symbol }}</strong>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <hr>
                                 {% endfor %}
                             </div>
                         {% endif %}
                         {% if EURPrice and USDprice and DOPPrice %}
-                            <div class="col">
-                                {% for price in USDprice %}
-                                    <div class="row">
-                                        <div class="list-group list-group-flush border-bottom scrollarea">
-                                            <div class="list-group-item list-group-item-action list-group-item-primary py-3 lh-tight"
-                                                 aria-current="true">
-                                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                                    {% if price > 1 %}
-                                                        <strong class="mb-1">USD ${{ price |floatformat:2 }}</strong>
-                                                    {% else %}
-                                                        <strong class="mb-1">USD ${{ price }}</strong>
-                                                    {% endif %}
+                            <div class="col-2">
+                                <div id="spinnerLoadingBlue" class="text-center ">
+                                    <div class="spinner-border text-info" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                                <div id="USDList">
+                                    {% for price in USDprice %}
+                                        <div class="row">
+                                            <div class="list-group list-group-flush border-bottom scrollarea">
+                                                <div class="list-group-item list-group-item-action list-group-item-primary py-3 lh-tight"
+                                                     aria-current="true">
+                                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                                        {% if price > 1 %}
+                                                            <strong class="mb-1">USD ${{ price |floatformat:2 }}</strong>
+                                                        {% else %}
+                                                            <strong class="mb-1">USD ${{ price }}</strong>
+                                                        {% endif %}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <hr>
-                                {% endfor %}
+                                        <hr>
+                                    {% endfor %}
+                                </div>
                             </div>
-                            <div class="col">
-                                {% for price in EURPrice %}
-                                    <div class="row">
-                                        <div class="list-group list-group-flush border-bottom scrollarea">
-                                            <div class="list-group-item list-group-item-action list-group-item-success py-3 lh-tight"
-                                                 aria-current="true">
-                                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                                    {% if price > 1 %}
-                                                        <strong class="mb-1">EUR €{{ price |floatformat:2 }}</strong>
-                                                    {% else %}
-                                                        <strong class="mb-1">EUR €{{ price }}</strong>
-                                                    {% endif %}
+                            <div class="col-2">
+                                <div id="spinnerLoadingGreen" class="spinner-border text-success" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div id="EURList">
+                                    {% for price in EURPrice %}
+                                        <div class="row">
+                                            <div class="list-group list-group-flush border-bottom scrollarea">
+                                                <div class="list-group-item list-group-item-action list-group-item-success py-3 lh-tight"
+                                                     aria-current="true">
+                                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                                        {% if price > 1 %}
+                                                            <strong class="mb-1">EUR €{{ price |floatformat:2 }}</strong>
+                                                        {% else %}
+                                                            <strong class="mb-1">EUR €{{ price }}</strong>
+                                                        {% endif %}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <hr>
-                                {% endfor %}
+                                        <hr>
+                                    {% endfor %}
+                                </div>
                             </div>
-                            <div class="col">
+                            <div class="col-2">
+                                <div id="spinnerLoadingYelow" class="spinner-border text-warning" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div id="DOPList">                            
                                 {% for price in DOPPrice %}
                                     <div class="row">
                                         <div class="list-group list-group-flush border-bottom scrollarea">
@@ -198,6 +224,8 @@
                                     </div>
                                     <hr>
                                 {% endfor %}
+                            </div>
+
                             </div>
                         {% endif %}
                     </div>

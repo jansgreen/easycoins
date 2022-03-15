@@ -22,8 +22,9 @@ def kucoins_prises():
         id +=1
         symbol = str(coin)
 
-        newCoins = Coins(
+        newCoins = Coins.objects.create(
             id = id,
+            Fiat = ['USD', 'EUR', 'DOP'],
             symbol = symbol
         )
 #            id = str(id),

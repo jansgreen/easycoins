@@ -1,3 +1,14 @@
 .bodyClass {
     background-color: #d4eeff;
 }
+
+.not-visible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+#USDList, #EURList, #DOPList{
+    display: none;
+}

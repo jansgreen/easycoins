@@ -1,4 +1,30 @@
 // Cicle
+
+const spinnerLoadBlue = document.getElementById('spinnerLoadingBlue')
+const spinnerLoadGreen = document.getElementById('spinnerLoadingGreen')
+const spinnerLoadYelow = document.getElementById('spinnerLoadingYelow')
+
+
+$(document).ready(function () {
+    setTimeout(()=>{
+        spinnerLoadBlue.classList.add('not-visible')
+        spinnerLoadGreen.classList.add('not-visible')
+        spinnerLoadYelow.classList.add('not-visible')
+
+
+    },500);
+
+    setTimeout(()=>{
+        document.getElementById('USDList').style.display = "block"
+        document.getElementById('EURList').style.display = "block"
+        document.getElementById('DOPList').style.display = "block"
+
+
+    },500)
+
+    
+})
+
 console.log("entrando a la consola");
 var url = "https://api-sandbox.circle.com/v1/banks/wires";
 
