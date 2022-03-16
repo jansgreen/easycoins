@@ -58,3 +58,8 @@ def AllTikets():
     client = Client(api_key, api_secret, api_passphrase)
     tikers = client.get_symbols()
     symbols = pprint.pformat(tikers)
+
+  
+
+
+

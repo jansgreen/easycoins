@@ -11,9 +11,11 @@ from .models import Coins
 from .forms import BuyForm
 from django.db.models import Q
 from asgiref.sync import async_to_sync
-import requests
+from .serializers import CoinsSerializers
 from requests.structures import CaseInsensitiveDict
 from kucoin.client import Client
+from django.http import JsonResponse
+
 from .addCoinsSym import kucoins_fixtures
 from decimal import *
 
@@ -41,7 +43,6 @@ def index(request):
     DOP_tickets = client.get_fiat_prices()
     USD_tickets = client.get_fiat_prices()
     EUR_tickets = client.get_fiat_prices("EUR")
-
     # lista de las criptomonedas en USD y EUR
 
     for Symbols in USD_tickets:
@@ -129,12 +130,27 @@ def index(request):
 
 
 def Processexchange(request):
-    if request.method == 'POST':
-        print(request.POST)
+    symbolAppen = []
+    pricesAppen = []
+
+    client = Client(api_key, api_secret, api_passphrase)
+    tickets = client.get_fiat_prices("EUR")
+    for coins in tickets:
+        symbol = coins
+        price = tickets[coins]
+        symbolAppen.append(symbol)
+        pricesAppen.append(price)
+    Coin = Coins.objects.all()
+    Seria = CoinsSerializers(Coin, many=True)
+    Seria.GetCoinsPrice()
+    print(Seria.GetCoinsPrice())
+    return JsonResponse(Seria.data, safe=False)
+
+#        print(request.POST)
 #        HaveSymbols = 
 #        HaveAmount = 
 #        WantSymbols =
 #        WantAmount = 
-    return HttpResponseRedirect('/thanks/')
+ #   return HttpResponseRedirect('/thanks/')
 
 

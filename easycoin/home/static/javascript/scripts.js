@@ -1,4 +1,7 @@
-// Cicle
+import * as kucoins from "./kucoin.js"
+
+
+// CREAMOS ELEMENTOS DINAMICO DE LOADING
 
 const spinnerLoadBlue = document.getElementById('spinnerLoadingBlue')
 const spinnerLoadGreen = document.getElementById('spinnerLoadingGreen')
@@ -25,7 +28,12 @@ $(document).ready(function () {
     
 })
 
+const coins = kucoins.kucoins()
+
 console.log("entrando a la consola");
+console.log(coins);
+console.log("entrando a la consola");
+
 var url = "https://api-sandbox.circle.com/v1/banks/wires";
 
 var xhr = new XMLHttpRequest();
