@@ -12,3 +12,9 @@
 #USDList, #EURList, #DOPList{
     display: none;
 }
+
+#exampleModal{
+    display: none;
+
+
+}

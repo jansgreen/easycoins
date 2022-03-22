@@ -1,6 +1,7 @@
 from django.db import models
 
 
+
 class FiatCoins(models.Model):
     id =  models.CharField(max_length=100 , primary_key=True)
     Fiats =  models.CharField(max_length=256, blank=True, null=True)
@@ -12,7 +13,3 @@ class Coins(models.Model):
 
     def __str__(self):
         return self.symbol
-
-
-
-

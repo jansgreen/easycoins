@@ -15,9 +15,11 @@ from .serializers import CoinsSerializers
 from requests.structures import CaseInsensitiveDict
 from kucoin.client import Client
 from django.http import JsonResponse
+from django.utils.safestring import mark_safe
 
 from .addCoinsSym import kucoins_fixtures
 from decimal import *
+
 
 
 
@@ -27,6 +29,7 @@ api_key = '621d6f9927c8800001b3e408'
 api_secret = '7906e97b-853e-4408-af59-79c7ac1c0d76'
 api_passphrase = '624973'
 def index(request):
+   
     TokenObj = token()
     AllTiket = AllTikets()
     addKucoinJson = kucoins_fixtures()
@@ -37,6 +40,7 @@ def index(request):
     DOPPrice_append= []
     client = Client(api_key, api_secret, api_passphrase)
 
+
 #    response_symbol = kucoins_Symbols()
 #    response_prices = kucoins_prises()
     form = BuyForm
@@ -44,6 +48,7 @@ def index(request):
     USD_tickets = client.get_fiat_prices()
     EUR_tickets = client.get_fiat_prices("EUR")
     # lista de las criptomonedas en USD y EUR
+    
 
     for Symbols in USD_tickets:
         Symbol_append.append(Symbols)
@@ -114,10 +119,9 @@ def index(request):
         }
 
         return render(request, 'index.html', context)
-        
-        #    coins = 58.00 ** int(Dop[search])
 
     context={
+        'token': TokenObj,
         'form':form,
         'Symbols':Symbol_append,
         'USDprice': USDPrice_append,
@@ -132,19 +136,24 @@ def index(request):
 def Processexchange(request):
     symbolAppen = []
     pricesAppen = []
+    if request.method == 'POST':
+        haveSymbols = request['Have_Symbols']
+        haveamount = request['Have_amount']
+        print(haveSymbols)
+        print(haveamount)
 
-    client = Client(api_key, api_secret, api_passphrase)
-    tickets = client.get_fiat_prices("EUR")
-    for coins in tickets:
-        symbol = coins
-        price = tickets[coins]
-        symbolAppen.append(symbol)
-        pricesAppen.append(price)
-    Coin = Coins.objects.all()
-    Seria = CoinsSerializers(Coin, many=True)
-    Seria.GetCoinsPrice()
-    print(Seria.GetCoinsPrice())
-    return JsonResponse(Seria.data, safe=False)
+        ExchangePrice = "ExchangePrice"
+
+#    client = Client(api_key, api_secret, api_passphrase)
+#    tickets = client.get_fiat_prices("EUR")
+#    for coins in tickets:
+#        symbol = coins
+#        price = tickets[coins]
+#        symbolAppen.append(symbol)
+#        pricesAppen.append(price)
+#    Coin = Coins.objects.all()
+#    Seria = CoinsSerializers(Coin, many=True)
+#    return JsonResponse(Seria.data, safe=False)
 
 #        print(request.POST)
 #        HaveSymbols = 

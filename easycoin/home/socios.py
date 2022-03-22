@@ -42,9 +42,18 @@ def kucoins_Symbols():
     return tickets
 
 def token():
+    connectId = {
+    "id": int(time.time() * 1000),
+    "type": "subscribe",
+    "topic": "/market/ticker:BTC-USDT",
+    "response": True
+}
     client = Client(api_key, api_secret, api_passphrase)
-    TokenObject = client.get_ws_endpoint(private=False) #.get_symbols()
+    nonce = int(time.time() * 1000)
+    TokenObject = client.get_ws_endpoint(private=False) #._generate_signature(nonce = int(time.time() * 1000), method='GET', path="/market/ticker:BTC-USDT", data=data) #.get_ws_endpoint(private=False) #.get_symbols() 
     timestamp = client.get_timestamp()
+
+    print(timestamp)
        
     context ={
         'token':TokenObject['token'],
