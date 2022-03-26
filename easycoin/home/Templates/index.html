@@ -1,76 +1,6 @@
 {% extends 'base.html' %}
 {% block container %}
     <!-- Vertically centered scrollable modal -->
-    <div class="modal fade"
-         id="exampleModal"
-         tabindex="-1"
-         aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="card rounded border border-3 border-info">
-                        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-                            <div class="col">
-                                <div class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-                                    <svg class="bi me-2" width="30" height="24">
-                                        <use xlink:href="#bootstrap"></use>
-                                    </svg>
-                                    <strong class="fs-5 fw-semibold">Easy exchange</strong>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body ">
-                            <form action="{% url 'index' %}" method="POST">
-                                <div class="row justify-content-md-center mb-3">
-                                    <div class="input-group mb-3">
-                                        {% if form %}
-                                            {{ form.Have_Symbols }}
-                                            {{ form.Have_amount }}
-                                            {{ form.Want_Symbols}}
-                                        {% endif %}
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        {% if ExchangePrice %}{{ form.Want_amount }}{% endif %}
-                                    </div>
-                                </div>
-                                <div class ="container">
-                                    <div class="row justify-content-md-center mb-3">
-                                        {% if ExchangePrice %}
-                                            <button type="button" class="btn btn-success" type="submit">Buy Now!</button>
-                                        {% else %}
-                                            <button type="button"
-                                                    class="btn btn-success"
-                                                    type="submit"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">
-                                                Check
-                                            </button>
-                                            <button type="button"
-                                                    class="btn btn-primary"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">Buy Now!</button>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
     {% load tag %}
     {% if token %}
         <input type="password" class="form-control me-2 visually-hidden" id="Token" value= {{ token.token }}>
@@ -94,10 +24,12 @@
                     </div>
                 </div>
                 <div class="card-body ">
-                    <button type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Buy Now!</button>
+                    <div class="vstack gap-2 col-md-5 mx-auto">
+                        <button type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Buy Now!</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,6 +37,7 @@
             <div class="container ">
                 <div class="card rounded border border-3 border-info">
                     <form action="{% url 'index' %}"      method="GET">
+                        {% csrf_token %}
                         <div class="row justify-content-md-center">
                             <div class = "col-8 ">
                                 <div class="card-body">
@@ -168,139 +101,127 @@
             <div class="row card mt-3 rounded border border-3 border-info">
                 <div class="container">
                     {% if Fiat %}
-                        <div class="row row-cols-2 mt-3 mb-3">
-                            <div class="col">
-                                <div class="row">
-                                    <h6>{{ search }}</h6>
+                        <div class="row mt-5">
+                            <div class="card bg-info">
+                                <div class="card-body">
+                                    <strong class="fs-5 fw-semibold">Search result...</strong>
                                 </div>
-                                <hr>
                             </div>
-                            <div class="col">
-                                <div class="row">
-                                    {% if Fiat > 1 %}
-                                        <strong class="mb-1">{{ Fiat |floatformat:2 }}</strong>
-                                    {% else %}
-                                        <strong class="mb-1">{{ Fiat }}</strong>
-                                    {% endif %}
-                                    <h6>{{ Fiat }}</h6>
+                        </div>
+                        <div class="row row-cols-2 mt-3 mb-3">
+                            <div class="col" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="list-group list-group-flush border-bottom scrollarea">
+                                    <div class="list-group-item list-group-item-action list-group-item-dark py-3 lh-tight"
+                                         aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <strong class="mb-1">{{ search }}</strong>
+                                        </div>
+                                    </div>
                                 </div>
-                                <hr>
+                            </div>
+                            <div class="col " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="list-group list-group-flush border-bottom scrollarea">
+                                    <div class="list-group-item list-group-item-action list-group-item-success py-3 lh-tight"
+                                         aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            {% if Fiat > 1 %}
+                                                <strong class="mb-1">{{ Fiat |floatformat:2 }}</strong>
+                                            {% else %}
+                                                <strong class="mb-1">{{ Fiat }}</strong>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="container">
+                            <div class="row mt-5">
+                                <div class="card bg-info">
+                                    <div class="card-body">
+                                        <strong class="fs-5 fw-semibold">Currencies</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            {% if page_obj %}
+                                {% for data in page_obj %}
+                                    <div class="row mt-2">
+                                        <div class="col">
+                                            <div class="list-group list-group-flush border-bottom scrollarea">
+                                                <div class="list-group-item list-group-item-action list-group-item-dark py-3 lh-tight"
+                                                     aria-current="true">
+                                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                                        <strong class="mb-1">{{ data.Symbol }}</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <div class="list-group list-group-flush border-bottom scrollarea">
+                                                <div class="list-group-item list-group-item-action bg-primary list-group-item-dark py-3 lh-tight"
+                                                     aria-current="true">
+                                                    <div class="d-flex w-100 align-items-center justify-content-between fs-">
+                                                        {% if price > 1 %}
+                                                            <strong class="mb-1">USD ${{ data.USD |floatformat:2 }}</strong>
+                                                        {% else %}
+                                                            <strong class="mb-1">USD ${{ data.USD }}</strong>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <div class="list-group list-group-flush border-bottom scrollarea">
+                                                <div class="list-group-item list-group-item-action bg-info list-group-item-dark py-3 lh-tight"
+                                                     aria-current="true">
+                                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                                        {% if price > 1 %}
+                                                            <strong class="mb-1">EUR €{{ data.EUR |floatformat:2 }}</strong>
+                                                        {% else %}
+                                                            <strong class="mb-1">EUR €{{ data.EUR }}</strong>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <div class="list-group list-group-flush border-bottom scrollarea">
+                                                <div class="list-group-item list-group-item-action bg-warning list-group-item-dark py-3 lh-tight"
+                                                     aria-current="true">
+                                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                                        {% if price > 1 %}
+                                                            <strong class="mb-1">DOP $ {{ data.DOP |floatformat:2 }}</strong>
+                                                        {% else %}
+                                                            <strong class="mb-1">DOP $ {{ data.DOP }}</strong>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                            <div class="row justify-content-md-center mt-5 mb-5">
+                                <div class="col col-lg-2">
+                                    {% if page_obj.has_previous %}
+                                        <a class="btn btn-light" href="?page=1">&laquo; first</a>
+                                        <a class="btn btn-light"
+                                           href="?page={{ page_obj.previous_page_number }}">previous</a>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-auto">
+                                    <strong class="btn btn-outline-info">{{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</strong>
+                                </div>
+                                <div class="col col-lg-2">
+                                    {% if page_obj.has_next %}
+                                        <a class="btn btn-light" href="?page={{ page_obj.next_page_number }}">next</a>
+                                        <a class="btn btn-light" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                                    {% endif %}
+                                </div>
                             </div>
                         </div>
                     {% endif %}
-                    <div class="row row-cols-4 mt-3">
-                        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-                            <div class="col">
-                                <div class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-                                    <svg class="bi me-2" width="30" height="24">
-                                        <use xlink:href="#bootstrap"></use>
-                                    </svg>
-                                    <strong class="fs-5 fw-semibold">Currencies</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-cols-4 mt-3 justify-content-center ">
-                        {% if Symbols %}
-                            <div class="col-5">
-                                {% for symbol in Symbols %}
-                                    <div class="row">
-                                        <div class="list-group list-group-flush border-bottom scrollarea">
-                                            <div class="list-group-item list-group-item-action list-group-item-dark py-3 lh-tight"
-                                                 aria-current="true">
-                                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                                    <strong class="mb-1">{{ symbol }}</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                {% endfor %}
-                            </div>
-                        {% endif %}
-                        {% if EURPrice and USDprice and DOPPrice %}
-                            <div class="col-2">
-                                <div id="spinnerLoadingBlue" class="text-center ">
-                                    <div class="spinner-border text-info" role="status">
-                                        <span class="visually-hidden">Loading...</span>
-                                    </div>
-                                </div>
-                                <div id="USDList">
-                                    {% for price in USDprice %}
-                                        <div class="row">
-                                            <div class="list-group list-group-flush border-bottom scrollarea">
-                                                <div class="list-group-item list-group-item-action list-group-item-primary py-3 lh-tight"
-                                                     aria-current="true">
-                                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                                        {% if price > 1 %}
-                                                            <strong class="mb-1">USD ${{ price |floatformat:2 }}</strong>
-                                                        {% else %}
-                                                            <strong class="mb-1">USD ${{ price }}</strong>
-                                                        {% endif %}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div id="spinnerLoadingGreen"
-                                     class="spinner-border text-success"
-                                     role="status">
-                                    <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <div id="EURList">
-                                    {% for price in EURPrice %}
-                                        <div class="row">
-                                            <div class="list-group list-group-flush border-bottom scrollarea">
-                                                <div class="list-group-item list-group-item-action list-group-item-success py-3 lh-tight"
-                                                     aria-current="true">
-                                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                                        {% if price > 1 %}
-                                                            <strong class="mb-1">EUR €{{ price |floatformat:2 }}</strong>
-                                                        {% else %}
-                                                            <strong class="mb-1">EUR €{{ price }}</strong>
-                                                        {% endif %}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div id="spinnerLoadingYelow"
-                                     class="spinner-border text-warning"
-                                     role="status">
-                                    <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <div id="DOPList">
-                                    {% for price in DOPPrice %}
-                                        <div class="row">
-                                            <div class="list-group list-group-flush border-bottom scrollarea">
-                                                <div class="list-group-item list-group-item-action list-group-item-warning py-3 lh-tight"
-                                                     aria-current="true">
-                                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                                        {% if price > 1 %}
-                                                            <strong class="mb-1">DOP ${{ price |floatformat:2 }}</strong>
-                                                        {% else %}
-                                                            <strong class="mb-1">DOP ${{ price }}</strong>
-                                                        {% endif %}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        {% endif %}
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-{% endblock %}
+    {% endblock %}

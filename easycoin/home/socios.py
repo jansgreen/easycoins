@@ -4,6 +4,8 @@ from .models import Coins
 from asgiref.sync import async_to_sync
 import time
 import pprint
+from decimal import *
+from .models import CoinsTest
 
 
 
@@ -12,6 +14,61 @@ import pprint
 api_key = '621d6f9927c8800001b3e408'
 api_secret = '7906e97b-853e-4408-af59-79c7ac1c0d76'
 api_passphrase = '624973'
+
+def KukoinCurrencies():
+    client = Client(api_key, api_secret, api_passphrase)
+    response = client.get_fiat_prices()
+    EUR_response = client.get_fiat_prices("EUR")
+
+#    print(symbols_json)
+    JSON_Objsct = []
+    num = 0
+
+    for data in response:
+        num+=1
+        if int(Decimal(response[data])) >= 1.00 :
+            USD_Deci =Decimal(response[data])
+            USD_Roun = '{:,}'.format(round(USD_Deci, 2))
+        else:
+            USD_Roun = '{:,}'.format(Decimal(response[data]))
+
+        if int(Decimal(EUR_response[data])) >= 1.00:
+            EUR_Deci = Decimal(EUR_response[data])
+            EUR_Roun = '{:,}'.format(round(EUR_Deci, 2))
+        else:
+            EUR_Roun = '{:,}'.format(Decimal(EUR_response[data]))
+
+        if int(Decimal(response[data])*Decimal(56)) >=1.00: 
+            DOP_Deci = Decimal(response[data])*Decimal(56)
+            DOP_Roun = '{:,}'.format(round(DOP_Deci, 2))
+        else:
+            DOP_Roun = '{:,}'.format(Decimal(response[data])*Decimal(56))
+
+        dataJson = {
+            "pk" : num,
+            "Symbol" :data,
+            "USD" : str(USD_Roun),
+            "EUR" : str(EUR_Roun),
+            "DOP" : str(DOP_Roun),
+        }
+        JSON_Objsct.append(dataJson)
+    return JSON_Objsct
+
+def Get_From_Kucoin():
+    client = Client(api_key, api_secret, api_passphrase)
+    return client
+
+
+
+
+
+    
+
+
+
+
+
+
 
 
 def kucoins_prises():

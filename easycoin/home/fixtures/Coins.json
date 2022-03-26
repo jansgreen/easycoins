@@ -2772,7 +2772,7 @@
         "pk": 347,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TVK"
+            "Symbol": "STG"
         }
     },
     {
@@ -2780,7 +2780,7 @@
         "pk": 348,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SHIB"
+            "Symbol": "TVK"
         }
     },
     {
@@ -2788,7 +2788,7 @@
         "pk": 349,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "IOTX"
+            "Symbol": "SHIB"
         }
     },
     {
@@ -2796,7 +2796,7 @@
         "pk": 350,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MHC"
+            "Symbol": "IOTX"
         }
     },
     {
@@ -2804,7 +2804,7 @@
         "pk": 351,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FRONT"
+            "Symbol": "MHC"
         }
     },
     {
@@ -2812,7 +2812,7 @@
         "pk": 352,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KDA"
+            "Symbol": "FRONT"
         }
     },
     {
@@ -2820,7 +2820,7 @@
         "pk": 353,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CERE"
+            "Symbol": "KDA"
         }
     },
     {
@@ -2828,7 +2828,7 @@
         "pk": 354,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DOCK"
+            "Symbol": "CERE"
         }
     },
     {
@@ -2836,7 +2836,7 @@
         "pk": 355,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "STX"
+            "Symbol": "DOCK"
         }
     },
     {
@@ -2844,7 +2844,7 @@
         "pk": 356,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "OLT"
+            "Symbol": "STX"
         }
     },
     {
@@ -2852,7 +2852,7 @@
         "pk": 357,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PNT"
+            "Symbol": "OLT"
         }
     },
     {
@@ -2860,7 +2860,7 @@
         "pk": 358,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "QI"
+            "Symbol": "PNT"
         }
     },
     {
@@ -2868,7 +2868,7 @@
         "pk": 359,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DENT"
+            "Symbol": "QI"
         }
     },
     {
@@ -2876,7 +2876,7 @@
         "pk": 360,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SDAO"
+            "Symbol": "DENT"
         }
     },
     {
@@ -2884,7 +2884,7 @@
         "pk": 361,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DPET"
+            "Symbol": "SDAO"
         }
     },
     {
@@ -2892,7 +2892,7 @@
         "pk": 362,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LINK3S"
+            "Symbol": "DPET"
         }
     },
     {
@@ -2900,7 +2900,7 @@
         "pk": 363,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "IOST"
+            "Symbol": "LINK3S"
         }
     },
     {
@@ -2908,7 +2908,7 @@
         "pk": 364,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CAKE"
+            "Symbol": "IOST"
         }
     },
     {
@@ -2916,7 +2916,7 @@
         "pk": 365,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "OMG"
+            "Symbol": "CAKE"
         }
     },
     {
@@ -2924,7 +2924,7 @@
         "pk": 366,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LINK3L"
+            "Symbol": "OMG"
         }
     },
     {
@@ -2932,7 +2932,7 @@
         "pk": 367,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GEEQ"
+            "Symbol": "LINK3L"
         }
     },
     {
@@ -2940,7 +2940,7 @@
         "pk": 368,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BAND"
+            "Symbol": "GEEQ"
         }
     },
     {
@@ -2948,7 +2948,7 @@
         "pk": 369,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "POL"
+            "Symbol": "BAND"
         }
     },
     {
@@ -2956,7 +2956,7 @@
         "pk": 370,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SUN"
+            "Symbol": "POL"
         }
     },
     {
@@ -2964,7 +2964,7 @@
         "pk": 371,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TOWER"
+            "Symbol": "SUN"
         }
     },
     {
@@ -2972,7 +2972,7 @@
         "pk": 372,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ASTR"
+            "Symbol": "TOWER"
         }
     },
     {
@@ -2980,7 +2980,7 @@
         "pk": 373,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ARRR"
+            "Symbol": "ASTR"
         }
     },
     {
@@ -2988,7 +2988,7 @@
         "pk": 374,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "NKN"
+            "Symbol": "ARRR"
         }
     },
     {
@@ -2996,7 +2996,7 @@
         "pk": 375,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BTC"
+            "Symbol": "NKN"
         }
     },
     {
@@ -3004,7 +3004,7 @@
         "pk": 376,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "RSR"
+            "Symbol": "BTC"
         }
     },
     {
@@ -3012,7 +3012,7 @@
         "pk": 377,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DVPN"
+            "Symbol": "RSR"
         }
     },
     {
@@ -3020,7 +3020,7 @@
         "pk": 378,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TWT"
+            "Symbol": "DVPN"
         }
     },
     {
@@ -3028,7 +3028,7 @@
         "pk": 379,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "IOTA"
+            "Symbol": "TWT"
         }
     },
     {
@@ -3036,7 +3036,7 @@
         "pk": 380,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CVC"
+            "Symbol": "IOTA"
         }
     },
     {
@@ -3044,7 +3044,7 @@
         "pk": 381,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "REEF"
+            "Symbol": "CVC"
         }
     },
     {
@@ -3052,7 +3052,7 @@
         "pk": 382,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MNET"
+            "Symbol": "REEF"
         }
     },
     {
@@ -3060,7 +3060,7 @@
         "pk": 383,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "OPCT"
+            "Symbol": "MNET"
         }
     },
     {
@@ -3068,7 +3068,7 @@
         "pk": 384,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MIR"
+            "Symbol": "OPCT"
         }
     },
     {
@@ -3076,7 +3076,7 @@
         "pk": 385,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MTRG"
+            "Symbol": "MIR"
         }
     },
     {
@@ -3084,7 +3084,7 @@
         "pk": 386,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TRIAS"
+            "Symbol": "MTRG"
         }
     },
     {
@@ -3092,7 +3092,7 @@
         "pk": 387,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LPOOL"
+            "Symbol": "TRIAS"
         }
     },
     {
@@ -3100,7 +3100,7 @@
         "pk": 388,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TXA"
+            "Symbol": "LPOOL"
         }
     },
     {
@@ -3108,7 +3108,7 @@
         "pk": 389,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KEY"
+            "Symbol": "TXA"
         }
     },
     {
@@ -3116,7 +3116,7 @@
         "pk": 390,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ETH3L"
+            "Symbol": "KEY"
         }
     },
     {
@@ -3124,7 +3124,7 @@
         "pk": 391,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BTT"
+            "Symbol": "ETH3L"
         }
     },
     {
@@ -3132,7 +3132,7 @@
         "pk": 392,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CVX"
+            "Symbol": "BTT"
         }
     },
     {
@@ -3140,7 +3140,7 @@
         "pk": 393,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ARX"
+            "Symbol": "CVX"
         }
     },
     {
@@ -3148,7 +3148,7 @@
         "pk": 394,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ONE"
+            "Symbol": "ARX"
         }
     },
     {
@@ -3156,7 +3156,7 @@
         "pk": 395,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ETH3S"
+            "Symbol": "ONE"
         }
     },
     {
@@ -3164,7 +3164,7 @@
         "pk": 396,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "QRDO"
+            "Symbol": "ETH3S"
         }
     },
     {
@@ -3172,7 +3172,7 @@
         "pk": 397,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ANKR"
+            "Symbol": "QRDO"
         }
     },
     {
@@ -3180,7 +3180,7 @@
         "pk": 398,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SUSHI"
+            "Symbol": "ANKR"
         }
     },
     {
@@ -3188,7 +3188,7 @@
         "pk": 399,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ALGO"
+            "Symbol": "SUSHI"
         }
     },
     {
@@ -3196,7 +3196,7 @@
         "pk": 400,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SYLO"
+            "Symbol": "ALGO"
         }
     },
     {
@@ -3204,7 +3204,7 @@
         "pk": 401,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ZCX"
+            "Symbol": "SYLO"
         }
     },
     {
@@ -3212,7 +3212,7 @@
         "pk": 402,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ASD"
+            "Symbol": "ZCX"
         }
     },
     {
@@ -3220,7 +3220,7 @@
         "pk": 403,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "WBTC"
+            "Symbol": "ASD"
         }
     },
     {
@@ -3228,7 +3228,7 @@
         "pk": 404,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ONT"
+            "Symbol": "WBTC"
         }
     },
     {
@@ -3236,7 +3236,7 @@
         "pk": 405,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PPT"
+            "Symbol": "ONT"
         }
     },
     {
@@ -3244,7 +3244,7 @@
         "pk": 406,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MJT"
+            "Symbol": "PPT"
         }
     },
     {
@@ -3252,7 +3252,7 @@
         "pk": 407,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DGTX"
+            "Symbol": "MJT"
         }
     },
     {
@@ -3260,7 +3260,7 @@
         "pk": 408,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DYP"
+            "Symbol": "DGTX"
         }
     },
     {
@@ -3268,7 +3268,7 @@
         "pk": 409,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CUSD"
+            "Symbol": "DYP"
         }
     },
     {
@@ -3276,7 +3276,7 @@
         "pk": 410,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CWS"
+            "Symbol": "CUSD"
         }
     },
     {
@@ -3284,7 +3284,7 @@
         "pk": 411,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PIVX"
+            "Symbol": "CWS"
         }
     },
     {
@@ -3292,7 +3292,7 @@
         "pk": 412,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CEUR"
+            "Symbol": "PIVX"
         }
     },
     {
@@ -3300,7 +3300,7 @@
         "pk": 413,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DERO"
+            "Symbol": "CEUR"
         }
     },
     {
@@ -3308,7 +3308,7 @@
         "pk": 414,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MANA"
+            "Symbol": "DERO"
         }
     },
     {
@@ -3316,7 +3316,7 @@
         "pk": 415,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BUX"
+            "Symbol": "MANA"
         }
     },
     {
@@ -3324,7 +3324,7 @@
         "pk": 416,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DSLA"
+            "Symbol": "BUX"
         }
     },
     {
@@ -3332,7 +3332,7 @@
         "pk": 417,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "OOE"
+            "Symbol": "DSLA"
         }
     },
     {
@@ -3340,7 +3340,7 @@
         "pk": 418,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DOGE3L"
+            "Symbol": "OOE"
         }
     },
     {
@@ -3348,7 +3348,7 @@
         "pk": 419,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BUY"
+            "Symbol": "DOGE3L"
         }
     },
     {
@@ -3356,7 +3356,7 @@
         "pk": 420,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DOGE3S"
+            "Symbol": "BUY"
         }
     },
     {
@@ -3364,7 +3364,7 @@
         "pk": 421,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SWP"
+            "Symbol": "DOGE3S"
         }
     },
     {
@@ -3372,7 +3372,7 @@
         "pk": 422,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "NAKA"
+            "Symbol": "SWP"
         }
     },
     {
@@ -3380,7 +3380,7 @@
         "pk": 423,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GALAX"
+            "Symbol": "NAKA"
         }
     },
     {
@@ -3388,7 +3388,7 @@
         "pk": 424,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ATA"
+            "Symbol": "GALAX"
         }
     },
     {
@@ -3396,7 +3396,7 @@
         "pk": 425,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "UBXT"
+            "Symbol": "ATA"
         }
     },
     {
@@ -3404,7 +3404,7 @@
         "pk": 426,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "HAI"
+            "Symbol": "UBXT"
         }
     },
     {
@@ -3412,7 +3412,7 @@
         "pk": 427,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "NMR"
+            "Symbol": "HAI"
         }
     },
     {
@@ -3420,7 +3420,7 @@
         "pk": 428,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MKR"
+            "Symbol": "NMR"
         }
     },
     {
@@ -3428,7 +3428,7 @@
         "pk": 429,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LIT"
+            "Symbol": "MKR"
         }
     },
     {
@@ -3436,7 +3436,7 @@
         "pk": 430,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DODO"
+            "Symbol": "LIT"
         }
     },
     {
@@ -3444,7 +3444,7 @@
         "pk": 431,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ICP"
+            "Symbol": "DODO"
         }
     },
     {
@@ -3452,7 +3452,7 @@
         "pk": 432,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MODEFI"
+            "Symbol": "ICP"
         }
     },
     {
@@ -3460,7 +3460,7 @@
         "pk": 433,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ZEC"
+            "Symbol": "MODEFI"
         }
     },
     {
@@ -3468,7 +3468,7 @@
         "pk": 434,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ZEE"
+            "Symbol": "ZEC"
         }
     },
     {
@@ -3476,7 +3476,7 @@
         "pk": 435,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TLOS"
+            "Symbol": "ZEE"
         }
     },
     {
@@ -3484,7 +3484,7 @@
         "pk": 436,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CXO"
+            "Symbol": "TLOS"
         }
     },
     {
@@ -3492,7 +3492,7 @@
         "pk": 437,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "RANKER"
+            "Symbol": "CXO"
         }
     },
     {
@@ -3500,7 +3500,7 @@
         "pk": 438,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DOT3L"
+            "Symbol": "RANKER"
         }
     },
     {
@@ -3508,7 +3508,7 @@
         "pk": 439,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ROUTE"
+            "Symbol": "DOT3L"
         }
     },
     {
@@ -3516,7 +3516,7 @@
         "pk": 440,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PRE"
+            "Symbol": "ROUTE"
         }
     },
     {
@@ -3524,7 +3524,7 @@
         "pk": 441,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ZEN"
+            "Symbol": "PRE"
         }
     },
     {
@@ -3532,7 +3532,7 @@
         "pk": 442,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LOOM"
+            "Symbol": "ZEN"
         }
     },
     {
@@ -3540,7 +3540,7 @@
         "pk": 443,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DOGE"
+            "Symbol": "LOOM"
         }
     },
     {
@@ -3548,7 +3548,7 @@
         "pk": 444,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ALPHA"
+            "Symbol": "DOGE"
         }
     },
     {
@@ -3556,7 +3556,7 @@
         "pk": 445,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "HBB"
+            "Symbol": "ALPHA"
         }
     },
     {
@@ -3564,7 +3564,7 @@
         "pk": 446,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DOT3S"
+            "Symbol": "HBB"
         }
     },
     {
@@ -3572,7 +3572,7 @@
         "pk": 447,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BOLT"
+            "Symbol": "DOT3S"
         }
     },
     {
@@ -3580,7 +3580,7 @@
         "pk": 448,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SXP"
+            "Symbol": "BOLT"
         }
     },
     {
@@ -3588,7 +3588,7 @@
         "pk": 449,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "HBAR"
+            "Symbol": "SXP"
         }
     },
     {
@@ -3596,7 +3596,7 @@
         "pk": 450,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "WSIENNA"
+            "Symbol": "HBAR"
         }
     },
     {
@@ -3604,7 +3604,7 @@
         "pk": 451,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BONDLY"
+            "Symbol": "WSIENNA"
         }
     },
     {
@@ -3612,7 +3612,7 @@
         "pk": 452,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MLK"
+            "Symbol": "BONDLY"
         }
     },
     {
@@ -3620,7 +3620,7 @@
         "pk": 453,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PRQ"
+            "Symbol": "MLK"
         }
     },
     {
@@ -3628,7 +3628,7 @@
         "pk": 454,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MLN"
+            "Symbol": "PRQ"
         }
     },
     {
@@ -3636,7 +3636,7 @@
         "pk": 455,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "OUSD"
+            "Symbol": "MLN"
         }
     },
     {
@@ -3644,7 +3644,7 @@
         "pk": 456,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CTSI"
+            "Symbol": "OUSD"
         }
     },
     {
@@ -3652,7 +3652,7 @@
         "pk": 457,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KAVA"
+            "Symbol": "CTSI"
         }
     },
     {
@@ -3660,7 +3660,7 @@
         "pk": 458,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "C98"
+            "Symbol": "KAVA"
         }
     },
     {
@@ -3668,7 +3668,7 @@
         "pk": 459,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VIDT"
+            "Symbol": "C98"
         }
     },
     {
@@ -3676,7 +3676,7 @@
         "pk": 460,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AVA"
+            "Symbol": "VIDT"
         }
     },
     {
@@ -3684,7 +3684,7 @@
         "pk": 461,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CRPT"
+            "Symbol": "AVA"
         }
     },
     {
@@ -3692,7 +3692,7 @@
         "pk": 462,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KIN"
+            "Symbol": "CRPT"
         }
     },
     {
@@ -3700,7 +3700,7 @@
         "pk": 463,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VI"
+            "Symbol": "KIN"
         }
     },
     {
@@ -3708,7 +3708,7 @@
         "pk": 464,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MATIC3S"
+            "Symbol": "VI"
         }
     },
     {
@@ -3716,7 +3716,7 @@
         "pk": 465,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GAS"
+            "Symbol": "MATIC3S"
         }
     },
     {
@@ -3724,7 +3724,7 @@
         "pk": 466,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XCH"
+            "Symbol": "GAS"
         }
     },
     {
@@ -3732,7 +3732,7 @@
         "pk": 467,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VR"
+            "Symbol": "XCH"
         }
     },
     {
@@ -3740,7 +3740,7 @@
         "pk": 468,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "NOIA"
+            "Symbol": "VR"
         }
     },
     {
@@ -3748,7 +3748,7 @@
         "pk": 469,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VSYS"
+            "Symbol": "NOIA"
         }
     },
     {
@@ -3756,7 +3756,7 @@
         "pk": 470,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MATIC3L"
+            "Symbol": "VSYS"
         }
     },
     {
@@ -3764,7 +3764,7 @@
         "pk": 471,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "THETA"
+            "Symbol": "MATIC3L"
         }
     },
     {
@@ -3772,7 +3772,7 @@
         "pk": 472,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ORC"
+            "Symbol": "THETA"
         }
     },
     {
@@ -3780,7 +3780,7 @@
         "pk": 473,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CAPP"
+            "Symbol": "ORC"
         }
     },
     {
@@ -3788,7 +3788,7 @@
         "pk": 474,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "WAL"
+            "Symbol": "CAPP"
         }
     },
     {
@@ -3796,7 +3796,7 @@
         "pk": 475,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MELOS"
+            "Symbol": "WAL"
         }
     },
     {
@@ -3804,7 +3804,7 @@
         "pk": 476,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "WAN"
+            "Symbol": "MELOS"
         }
     },
     {
@@ -3812,7 +3812,7 @@
         "pk": 477,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ORN"
+            "Symbol": "WAN"
         }
     },
     {
@@ -3820,7 +3820,7 @@
         "pk": 478,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "WAX"
+            "Symbol": "ORN"
         }
     },
     {
@@ -3828,7 +3828,7 @@
         "pk": 479,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MASK"
+            "Symbol": "WAX"
         }
     },
     {
@@ -3836,7 +3836,7 @@
         "pk": 480,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AAVE"
+            "Symbol": "MASK"
         }
     },
     {
@@ -3844,7 +3844,7 @@
         "pk": 481,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "EOS3L"
+            "Symbol": "AAVE"
         }
     },
     {
@@ -3852,7 +3852,7 @@
         "pk": 482,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "IDEA"
+            "Symbol": "EOS3L"
         }
     },
     {
@@ -3860,7 +3860,7 @@
         "pk": 483,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PERP"
+            "Symbol": "IDEA"
         }
     },
     {
@@ -3868,7 +3868,7 @@
         "pk": 484,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XDC"
+            "Symbol": "PERP"
         }
     },
     {
@@ -3876,7 +3876,7 @@
         "pk": 485,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MNW"
+            "Symbol": "XDC"
         }
     },
     {
@@ -3884,7 +3884,7 @@
         "pk": 486,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XDB"
+            "Symbol": "MNW"
         }
     },
     {
@@ -3892,7 +3892,7 @@
         "pk": 487,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "EOS3S"
+            "Symbol": "XDB"
         }
     },
     {
@@ -3900,7 +3900,7 @@
         "pk": 488,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BOND"
+            "Symbol": "EOS3S"
         }
     },
     {
@@ -3908,7 +3908,7 @@
         "pk": 489,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "YFI"
+            "Symbol": "BOND"
         }
     },
     {
@@ -3916,7 +3916,7 @@
         "pk": 490,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XCUR"
+            "Symbol": "YFI"
         }
     },
     {
@@ -3924,7 +3924,7 @@
         "pk": 491,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "HYDRA"
+            "Symbol": "XCUR"
         }
     },
     {
@@ -3932,7 +3932,7 @@
         "pk": 492,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SUTER"
+            "Symbol": "HYDRA"
         }
     },
     {
@@ -3940,7 +3940,7 @@
         "pk": 493,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TIME"
+            "Symbol": "SUTER"
         }
     },
     {
@@ -3948,7 +3948,7 @@
         "pk": 494,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AXC"
+            "Symbol": "TIME"
         }
     },
     {
@@ -3956,7 +3956,7 @@
         "pk": 495,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XED"
+            "Symbol": "BICO"
         }
     },
     {
@@ -3964,7 +3964,7 @@
         "pk": 496,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XEC"
+            "Symbol": "AXC"
         }
     },
     {
@@ -3972,7 +3972,7 @@
         "pk": 497,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LUNA3L"
+            "Symbol": "XED"
         }
     },
     {
@@ -3980,7 +3980,7 @@
         "pk": 498,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "YGG"
+            "Symbol": "XEC"
         }
     },
     {
@@ -3988,7 +3988,7 @@
         "pk": 499,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MONI"
+            "Symbol": "LUNA3L"
         }
     },
     {
@@ -3996,7 +3996,7 @@
         "pk": 500,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PEOPLE"
+            "Symbol": "YGG"
         }
     },
     {
@@ -4004,7 +4004,7 @@
         "pk": 501,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AXS"
+            "Symbol": "MONI"
         }
     },
     {
@@ -4012,7 +4012,7 @@
         "pk": 502,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ZIL"
+            "Symbol": "PEOPLE"
         }
     },
     {
@@ -4020,7 +4020,7 @@
         "pk": 503,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LUNA3S"
+            "Symbol": "AXS"
         }
     },
     {
@@ -4028,7 +4028,7 @@
         "pk": 504,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VAI"
+            "Symbol": "ZIL"
         }
     },
     {
@@ -4036,7 +4036,7 @@
         "pk": 505,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CARR"
+            "Symbol": "LUNA3S"
         }
     },
     {
@@ -4044,7 +4044,7 @@
         "pk": 506,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XEM"
+            "Symbol": "VAI"
         }
     },
     {
@@ -4052,7 +4052,7 @@
         "pk": 507,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GENS"
+            "Symbol": "CARR"
         }
     },
     {
@@ -4060,7 +4060,7 @@
         "pk": 508,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "NRG"
+            "Symbol": "XEM"
         }
     },
     {
@@ -4068,7 +4068,7 @@
         "pk": 509,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MSWAP"
+            "Symbol": "GENS"
         }
     },
     {
@@ -4076,7 +4076,7 @@
         "pk": 510,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ROAD"
+            "Symbol": "NRG"
         }
     },
     {
@@ -4084,7 +4084,7 @@
         "pk": 511,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TRAC"
+            "Symbol": "MSWAP"
         }
     },
     {
@@ -4092,7 +4092,7 @@
         "pk": 512,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ROAR"
+            "Symbol": "ROAD"
         }
     },
     {
@@ -4100,7 +4100,7 @@
         "pk": 513,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DFYN"
+            "Symbol": "TRAC"
         }
     },
     {
@@ -4108,7 +4108,7 @@
         "pk": 514,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BCHSV"
+            "Symbol": "ROAR"
         }
     },
     {
@@ -4116,7 +4116,7 @@
         "pk": 515,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CARD"
+            "Symbol": "DFYN"
         }
     },
     {
@@ -4124,7 +4124,7 @@
         "pk": 516,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "COMP"
+            "Symbol": "BCHSV"
         }
     },
     {
@@ -4132,7 +4132,7 @@
         "pk": 517,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PLAY"
+            "Symbol": "CARD"
         }
     },
     {
@@ -4140,7 +4140,7 @@
         "pk": 518,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XPRT"
+            "Symbol": "COMP"
         }
     },
     {
@@ -4148,7 +4148,7 @@
         "pk": 519,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KLV"
+            "Symbol": "PLAY"
         }
     },
     {
@@ -4156,7 +4156,7 @@
         "pk": 520,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "OOKI"
+            "Symbol": "XPRT"
         }
     },
     {
@@ -4164,7 +4164,7 @@
         "pk": 521,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "RUNE"
+            "Symbol": "KLV"
         }
     },
     {
@@ -4172,7 +4172,7 @@
         "pk": 522,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KMA"
+            "Symbol": "OOKI"
         }
     },
     {
@@ -4180,7 +4180,7 @@
         "pk": 523,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "COMB"
+            "Symbol": "RUNE"
         }
     },
     {
@@ -4188,7 +4188,7 @@
         "pk": 524,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LOC"
+            "Symbol": "KMA"
         }
     },
     {
@@ -4196,7 +4196,7 @@
         "pk": 525,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BCH3L"
+            "Symbol": "COMB"
         }
     },
     {
@@ -4204,7 +4204,7 @@
         "pk": 526,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LTC3L"
+            "Symbol": "LOC"
         }
     },
     {
@@ -4212,7 +4212,7 @@
         "pk": 527,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FORTH"
+            "Symbol": "BCH3L"
         }
     },
     {
@@ -4220,7 +4220,7 @@
         "pk": 528,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GHST"
+            "Symbol": "LTC3L"
         }
     },
     {
@@ -4228,7 +4228,7 @@
         "pk": 529,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KMD"
+            "Symbol": "FORTH"
         }
     },
     {
@@ -4236,7 +4236,7 @@
         "pk": 530,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BCH3S"
+            "Symbol": "GHST"
         }
     },
     {
@@ -4244,7 +4244,7 @@
         "pk": 531,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AAVE3S"
+            "Symbol": "KMD"
         }
     },
     {
@@ -4252,7 +4252,7 @@
         "pk": 532,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SENSO"
+            "Symbol": "BCH3S"
         }
     },
     {
@@ -4260,7 +4260,7 @@
         "pk": 533,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LON"
+            "Symbol": "AAVE3S"
         }
     },
     {
@@ -4268,7 +4268,7 @@
         "pk": 534,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LTC3S"
+            "Symbol": "SENSO"
         }
     },
     {
@@ -4276,7 +4276,7 @@
         "pk": 535,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "EPIK"
+            "Symbol": "LON"
         }
     },
     {
@@ -4284,7 +4284,7 @@
         "pk": 536,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FCL"
+            "Symbol": "LTC3S"
         }
     },
     {
@@ -4292,7 +4292,7 @@
         "pk": 537,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AAVE3L"
+            "Symbol": "EPIK"
         }
     },
     {
@@ -4300,7 +4300,7 @@
         "pk": 538,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DEXE"
+            "Symbol": "FCL"
         }
     },
     {
@@ -4308,7 +4308,7 @@
         "pk": 539,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AVAX"
+            "Symbol": "AAVE3L"
         }
     },
     {
@@ -4316,7 +4316,7 @@
         "pk": 540,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AMPL"
+            "Symbol": "DEXE"
         }
     },
     {
@@ -4324,7 +4324,7 @@
         "pk": 541,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "RFOX"
+            "Symbol": "AVAX"
         }
     },
     {
@@ -4332,7 +4332,7 @@
         "pk": 542,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GAFI"
+            "Symbol": "AMPL"
         }
     },
     {
@@ -4340,7 +4340,7 @@
         "pk": 543,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PUSH"
+            "Symbol": "RFOX"
         }
     },
     {
@@ -4348,7 +4348,7 @@
         "pk": 544,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KNC"
+            "Symbol": "GAFI"
         }
     },
     {
@@ -4356,7 +4356,7 @@
         "pk": 545,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ZKT"
+            "Symbol": "PUSH"
         }
     },
     {
@@ -4364,7 +4364,7 @@
         "pk": 546,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PROM"
+            "Symbol": "KNC"
         }
     },
     {
@@ -4372,7 +4372,7 @@
         "pk": 547,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ALEPH"
+            "Symbol": "ZKT"
         }
     },
     {
@@ -4380,7 +4380,7 @@
         "pk": 548,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SOL3S"
+            "Symbol": "PROM"
         }
     },
     {
@@ -4388,7 +4388,7 @@
         "pk": 549,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LPT"
+            "Symbol": "ALEPH"
         }
     },
     {
@@ -4396,7 +4396,7 @@
         "pk": 550,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LOVE"
+            "Symbol": "SOL3S"
         }
     },
     {
@@ -4404,7 +4404,7 @@
         "pk": 551,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GODS"
+            "Symbol": "LPT"
         }
     },
     {
@@ -4412,7 +4412,7 @@
         "pk": 552,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SAND3S"
+            "Symbol": "LOVE"
         }
     },
     {
@@ -4420,7 +4420,7 @@
         "pk": 553,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SOL3L"
+            "Symbol": "GODS"
         }
     },
     {
@@ -4428,7 +4428,7 @@
         "pk": 554,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GGC"
+            "Symbol": "SAND3S"
         }
     },
     {
@@ -4436,7 +4436,7 @@
         "pk": 555,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GGG"
+            "Symbol": "SOL3L"
         }
     },
     {
@@ -4444,7 +4444,7 @@
         "pk": 556,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DAPPX"
+            "Symbol": "GGC"
         }
     },
     {
@@ -4452,7 +4452,7 @@
         "pk": 557,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KOK"
+            "Symbol": "GGG"
         }
     },
     {
@@ -4460,7 +4460,7 @@
         "pk": 558,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "NUM"
+            "Symbol": "DAPPX"
         }
     },
     {
@@ -4468,7 +4468,7 @@
         "pk": 559,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XHV"
+            "Symbol": "KOK"
         }
     },
     {
@@ -4476,7 +4476,7 @@
         "pk": 560,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PYR"
+            "Symbol": "NUM"
         }
     },
     {
@@ -4484,7 +4484,7 @@
         "pk": 561,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KOL"
+            "Symbol": "XHV"
         }
     },
     {
@@ -4492,7 +4492,7 @@
         "pk": 562,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "UBX"
+            "Symbol": "PYR"
         }
     },
     {
@@ -4500,7 +4500,7 @@
         "pk": 563,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DAPPT"
+            "Symbol": "KOL"
         }
     },
     {
@@ -4508,7 +4508,7 @@
         "pk": 564,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DAG"
+            "Symbol": "UBX"
         }
     },
     {
@@ -4516,7 +4516,7 @@
         "pk": 565,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SUKU"
+            "Symbol": "DAPPT"
         }
     },
     {
@@ -4524,7 +4524,7 @@
         "pk": 566,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CREDI"
+            "Symbol": "DAG"
         }
     },
     {
@@ -4532,7 +4532,7 @@
         "pk": 567,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DAI"
+            "Symbol": "SUKU"
         }
     },
     {
@@ -4540,7 +4540,7 @@
         "pk": 568,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GRIN"
+            "Symbol": "CREDI"
         }
     },
     {
@@ -4548,7 +4548,7 @@
         "pk": 569,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ERTHA"
+            "Symbol": "DAI"
         }
     },
     {
@@ -4556,7 +4556,7 @@
         "pk": 570,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DAO"
+            "Symbol": "GRIN"
         }
     },
     {
@@ -4564,7 +4564,7 @@
         "pk": 571,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FET"
+            "Symbol": "ERTHA"
         }
     },
     {
@@ -4572,7 +4572,7 @@
         "pk": 572,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BMON"
+            "Symbol": "DAO"
         }
     },
     {
@@ -4580,7 +4580,7 @@
         "pk": 573,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FCON"
+            "Symbol": "FET"
         }
     },
     {
@@ -4588,7 +4588,7 @@
         "pk": 574,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XAVA"
+            "Symbol": "BMON"
         }
     },
     {
@@ -4596,7 +4596,7 @@
         "pk": 575,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LRC"
+            "Symbol": "FCON"
         }
     },
     {
@@ -4604,7 +4604,7 @@
         "pk": 576,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ILA"
+            "Symbol": "XAVA"
         }
     },
     {
@@ -4612,7 +4612,7 @@
         "pk": 577,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "UNI3S"
+            "Symbol": "LRC"
         }
     },
     {
@@ -4620,7 +4620,7 @@
         "pk": 578,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "USDJ"
+            "Symbol": "ILA"
         }
     },
     {
@@ -4628,7 +4628,7 @@
         "pk": 579,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MTL"
+            "Symbol": "UNI3S"
         }
     },
     {
@@ -4636,7 +4636,7 @@
         "pk": 580,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VET"
+            "Symbol": "USDJ"
         }
     },
     {
@@ -4644,7 +4644,7 @@
         "pk": 581,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DBC"
+            "Symbol": "MTL"
         }
     },
     {
@@ -4652,7 +4652,7 @@
         "pk": 582,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ALPACA"
+            "Symbol": "VET"
         }
     },
     {
@@ -4660,7 +4660,7 @@
         "pk": 583,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "USDT"
+            "Symbol": "DBC"
         }
     },
     {
@@ -4668,7 +4668,7 @@
         "pk": 584,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "EDG"
+            "Symbol": "ALPACA"
         }
     },
     {
@@ -4676,7 +4676,7 @@
         "pk": 585,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "OXT"
+            "Symbol": "USDT"
         }
     },
     {
@@ -4684,7 +4684,7 @@
         "pk": 586,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MTS"
+            "Symbol": "EDG"
         }
     },
     {
@@ -4692,7 +4692,7 @@
         "pk": 587,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DASH"
+            "Symbol": "OXT"
         }
     },
     {
@@ -4700,7 +4700,7 @@
         "pk": 588,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MTV"
+            "Symbol": "MTS"
         }
     },
     {
@@ -4708,7 +4708,7 @@
         "pk": 589,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FALCONS"
+            "Symbol": "DASH"
         }
     },
     {
@@ -4716,7 +4716,7 @@
         "pk": 590,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "USDN"
+            "Symbol": "MTV"
         }
     },
     {
@@ -4724,7 +4724,7 @@
         "pk": 591,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "YLD"
+            "Symbol": "FALCONS"
         }
     },
     {
@@ -4732,7 +4732,7 @@
         "pk": 592,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ILV"
+            "Symbol": "USDN"
         }
     },
     {
@@ -4740,7 +4740,7 @@
         "pk": 593,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "POLC"
+            "Symbol": "YLD"
         }
     },
     {
@@ -4748,7 +4748,7 @@
         "pk": 594,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "GHX"
+            "Symbol": "ILV"
         }
     },
     {
@@ -4756,7 +4756,7 @@
         "pk": 595,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "NORD"
+            "Symbol": "POLC"
         }
     },
     {
@@ -4764,7 +4764,7 @@
         "pk": 596,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CIRUS"
+            "Symbol": "GHX"
         }
     },
     {
@@ -4772,7 +4772,7 @@
         "pk": 597,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "UNI3L"
+            "Symbol": "NORD"
         }
     },
     {
@@ -4780,7 +4780,7 @@
         "pk": 598,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "NWC"
+            "Symbol": "CIRUS"
         }
     },
     {
@@ -4788,7 +4788,7 @@
         "pk": 599,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "POLK"
+            "Symbol": "UNI3L"
         }
     },
     {
@@ -4796,7 +4796,7 @@
         "pk": 600,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "HYVE"
+            "Symbol": "NWC"
         }
     },
     {
@@ -4804,7 +4804,7 @@
         "pk": 601,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BTC3L"
+            "Symbol": "POLK"
         }
     },
     {
@@ -4812,7 +4812,7 @@
         "pk": 602,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MARS4"
+            "Symbol": "HYVE"
         }
     },
     {
@@ -4820,7 +4820,7 @@
         "pk": 603,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LSK"
+            "Symbol": "BTC3L"
         }
     },
     {
@@ -4828,7 +4828,7 @@
         "pk": 604,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KEEP"
+            "Symbol": "MARS4"
         }
     },
     {
@@ -4836,7 +4836,7 @@
         "pk": 605,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VEED"
+            "Symbol": "LSK"
         }
     },
     {
@@ -4844,7 +4844,7 @@
         "pk": 606,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LSS"
+            "Symbol": "KEEP"
         }
     },
     {
@@ -4852,7 +4852,7 @@
         "pk": 607,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DCR"
+            "Symbol": "VEED"
         }
     },
     {
@@ -4860,7 +4860,7 @@
         "pk": 608,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CREAM"
+            "Symbol": "LSS"
         }
     },
     {
@@ -4868,7 +4868,7 @@
         "pk": 609,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CAS"
+            "Symbol": "DCR"
         }
     },
     {
@@ -4876,7 +4876,7 @@
         "pk": 610,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LIKE"
+            "Symbol": "CREAM"
         }
     },
     {
@@ -4884,7 +4884,7 @@
         "pk": 611,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DATA"
+            "Symbol": "CAS"
         }
     },
     {
@@ -4892,7 +4892,7 @@
         "pk": 612,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "IMX"
+            "Symbol": "LIKE"
         }
     },
     {
@@ -4900,7 +4900,7 @@
         "pk": 613,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BTC3S"
+            "Symbol": "DATA"
         }
     },
     {
@@ -4908,7 +4908,7 @@
         "pk": 614,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BLOK"
+            "Symbol": "IMX"
         }
     },
     {
@@ -4916,7 +4916,7 @@
         "pk": 615,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CWAR"
+            "Symbol": "BTC3S"
         }
     },
     {
@@ -4924,7 +4924,7 @@
         "pk": 616,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "USDC"
+            "Symbol": "BLOK"
         }
     },
     {
@@ -4932,7 +4932,7 @@
         "pk": 617,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LTC"
+            "Symbol": "CWAR"
         }
     },
     {
@@ -4940,7 +4940,7 @@
         "pk": 618,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "METIS"
+            "Symbol": "USDC"
         }
     },
     {
@@ -4948,7 +4948,7 @@
         "pk": 619,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ERSDL"
+            "Symbol": "LTC"
         }
     },
     {
@@ -4956,7 +4956,7 @@
         "pk": 620,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "WIN"
+            "Symbol": "METIS"
         }
     },
     {
@@ -4964,7 +4964,7 @@
         "pk": 621,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TCP"
+            "Symbol": "ERSDL"
         }
     },
     {
@@ -4972,7 +4972,7 @@
         "pk": 622,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "PLGR"
+            "Symbol": "WIN"
         }
     },
     {
@@ -4980,7 +4980,7 @@
         "pk": 623,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KRL"
+            "Symbol": "TCP"
         }
     },
     {
@@ -4988,7 +4988,7 @@
         "pk": 624,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "INJ"
+            "Symbol": "PLGR"
         }
     },
     {
@@ -4996,7 +4996,7 @@
         "pk": 625,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "CBC"
+            "Symbol": "KRL"
         }
     },
     {
@@ -5004,7 +5004,7 @@
         "pk": 626,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LTO"
+            "Symbol": "INJ"
         }
     },
     {
@@ -5012,7 +5012,7 @@
         "pk": 627,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MVP"
+            "Symbol": "CBC"
         }
     },
     {
@@ -5020,7 +5020,7 @@
         "pk": 628,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TRIBE"
+            "Symbol": "LTO"
         }
     },
     {
@@ -5028,7 +5028,7 @@
         "pk": 629,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DYDX"
+            "Symbol": "MVP"
         }
     },
     {
@@ -5036,7 +5036,7 @@
         "pk": 630,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AGIX"
+            "Symbol": "TRIBE"
         }
     },
     {
@@ -5044,7 +5044,7 @@
         "pk": 631,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BASIC"
+            "Symbol": "DYDX"
         }
     },
     {
@@ -5052,7 +5052,7 @@
         "pk": 632,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "POND"
+            "Symbol": "AGIX"
         }
     },
     {
@@ -5060,7 +5060,7 @@
         "pk": 633,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LTX"
+            "Symbol": "BASIC"
         }
     },
     {
@@ -5068,7 +5068,7 @@
         "pk": 634,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LINA"
+            "Symbol": "POND"
         }
     },
     {
@@ -5076,7 +5076,7 @@
         "pk": 635,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "EFX"
+            "Symbol": "LTX"
         }
     },
     {
@@ -5084,7 +5084,7 @@
         "pk": 636,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XLM"
+            "Symbol": "LINA"
         }
     },
     {
@@ -5092,7 +5092,7 @@
         "pk": 637,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "LINK"
+            "Symbol": "EFX"
         }
     },
     {
@@ -5100,7 +5100,7 @@
         "pk": 638,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DORA"
+            "Symbol": "XLM"
         }
     },
     {
@@ -5108,7 +5108,7 @@
         "pk": 639,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "HERO"
+            "Symbol": "LINK"
         }
     },
     {
@@ -5116,7 +5116,7 @@
         "pk": 640,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "ARKER"
+            "Symbol": "DORA"
         }
     },
     {
@@ -5124,7 +5124,7 @@
         "pk": 641,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "QTUM"
+            "Symbol": "HERO"
         }
     },
     {
@@ -5132,7 +5132,7 @@
         "pk": 642,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "DATX"
+            "Symbol": "ARKER"
         }
     },
     {
@@ -5140,7 +5140,7 @@
         "pk": 643,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "UFO"
+            "Symbol": "QTUM"
         }
     },
     {
@@ -5148,7 +5148,7 @@
         "pk": 644,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VEGA"
+            "Symbol": "DATX"
         }
     },
     {
@@ -5156,7 +5156,7 @@
         "pk": 645,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SUPER"
+            "Symbol": "UFO"
         }
     },
     {
@@ -5164,7 +5164,7 @@
         "pk": 646,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "IOI"
+            "Symbol": "VEGA"
         }
     },
     {
@@ -5172,7 +5172,7 @@
         "pk": 647,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "WILD"
+            "Symbol": "SUPER"
         }
     },
     {
@@ -5180,7 +5180,7 @@
         "pk": 648,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "POLS"
+            "Symbol": "IOI"
         }
     },
     {
@@ -5188,7 +5188,7 @@
         "pk": 649,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "KSM"
+            "Symbol": "WILD"
         }
     },
     {
@@ -5196,7 +5196,7 @@
         "pk": 650,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MNST"
+            "Symbol": "POLS"
         }
     },
     {
@@ -5204,7 +5204,7 @@
         "pk": 651,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FIL"
+            "Symbol": "KSM"
         }
     },
     {
@@ -5212,7 +5212,7 @@
         "pk": 652,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "STMX"
+            "Symbol": "MNST"
         }
     },
     {
@@ -5220,7 +5220,7 @@
         "pk": 653,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "RNDR"
+            "Symbol": "FIL"
         }
     },
     {
@@ -5228,7 +5228,7 @@
         "pk": 654,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BAL"
+            "Symbol": "STMX"
         }
     },
     {
@@ -5236,7 +5236,7 @@
         "pk": 655,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "POLX"
+            "Symbol": "RNDR"
         }
     },
     {
@@ -5244,7 +5244,7 @@
         "pk": 656,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "VID"
+            "Symbol": "BAL"
         }
     },
     {
@@ -5252,7 +5252,7 @@
         "pk": 657,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "STND"
+            "Symbol": "POLX"
         }
     },
     {
@@ -5260,7 +5260,7 @@
         "pk": 658,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "SCLP"
+            "Symbol": "VID"
         }
     },
     {
@@ -5268,7 +5268,7 @@
         "pk": 659,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BAT"
+            "Symbol": "STND"
         }
     },
     {
@@ -5276,7 +5276,7 @@
         "pk": 660,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "AKRO"
+            "Symbol": "SCLP"
         }
     },
     {
@@ -5284,7 +5284,7 @@
         "pk": 661,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FTM3L"
+            "Symbol": "BAT"
         }
     },
     {
@@ -5292,7 +5292,7 @@
         "pk": 662,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "BAX"
+            "Symbol": "AKRO"
         }
     },
     {
@@ -5300,7 +5300,7 @@
         "pk": 663,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MXC"
+            "Symbol": "FTM3L"
         }
     },
     {
@@ -5308,7 +5308,7 @@
         "pk": 664,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "TEL"
+            "Symbol": "BAX"
         }
     },
     {
@@ -5316,7 +5316,7 @@
         "pk": 665,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "MOVR"
+            "Symbol": "MXC"
         }
     },
     {
@@ -5324,7 +5324,7 @@
         "pk": 666,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "YOP"
+            "Symbol": "TEL"
         }
     },
     {
@@ -5332,7 +5332,7 @@
         "pk": 667,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "XMR"
+            "Symbol": "MOVR"
         }
     },
     {
@@ -5340,12 +5340,28 @@
         "pk": 668,
         "fields": {
             "Web": "Kucoins",
-            "Symbol": "FTM3S"
+            "Symbol": "YOP"
         }
     },
     {
         "model": "home.Coins",
         "pk": 669,
+        "fields": {
+            "Web": "Kucoins",
+            "Symbol": "XMR"
+        }
+    },
+    {
+        "model": "home.Coins",
+        "pk": 670,
+        "fields": {
+            "Web": "Kucoins",
+            "Symbol": "FTM3S"
+        }
+    },
+    {
+        "model": "home.Coins",
+        "pk": 671,
         "fields": {
             "Web": "Kucoins",
             "Symbol": "COTI"

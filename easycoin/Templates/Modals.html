@@ -1,0 +1,69 @@
+<div class="modal fade"
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+   <div class="modal-content">
+       <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+           <button type="button"
+                   class="btn-close"
+                   data-bs-dismiss="modal"
+                   aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+           <div class="card rounded border border-3 border-info">
+               <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+                   <div class="col">
+                       <div class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                           <svg class="bi me-2" width="30" height="24">
+                               <use xlink:href="#bootstrap"></use>
+                           </svg>
+                           <strong class="fs-5 fw-semibold">Easy exchange</strong>
+                       </div>
+                   </div>
+               </div>
+               <div class="card-body ">
+                   <form action="{% url 'index' %}" method="GET">
+                       <div class="row justify-content-md-center mb-3">
+                           <div class="input-group mb-3">
+                               {% if form %}
+                                   {{ form.Have_Symbols }}
+                                   {{ form.Have_amount }}
+                                   {{ form.Want_Symbols}}
+                               {% endif %}
+                           </div>
+                           <div class="input-group mb-3">
+                               {% if ExchangePrice %}{{ form.Want_amount }}{% endif %}
+                           </div>
+                       </div>
+                       <div class ="container">
+                           <div class="row justify-content-md-center mb-3">
+                               {% if ExchangePrice %}
+                                   <button type="submit" class="btn btn-success" type="submit">Buy Now!</button>
+                               {% else %}
+                                   <button type="submit"
+                                           class="btn btn-success"
+                                           data-bs-toggle="modal"
+                                           data-bs-target="#exampleModal">
+                                       Check
+                                   </button>
+                                   <button type="submit" 
+                                           class="btn btn-primary"
+                                           data-bs-toggle="modal"
+                                           data-bs-target="#exampleModal">Buy Now!</button>
+                               {% endif %}
+                           </div>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>
+       <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">Save changes</button>
+       </div>
+   </div>
+</div>
+</div>
