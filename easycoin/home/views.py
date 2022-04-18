@@ -5,7 +5,7 @@ from ntpath import join
 import time
 from unicodedata import digit
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .socios import kucoins_prises, kucoins_Symbols, token, AllTikets, KukoinCurrencies, Get_From_Kucoin
 from .models import Coins
 from .forms import BuyForm
@@ -23,13 +23,13 @@ from decimal import *
 
 
 
+client = Get_From_Kucoin()
 
 
 
 def index(request):
     kucoins = KukoinCurrencies()
     TokenObj = token()
-    client = Get_From_Kucoin()
     form = BuyForm
 
 # buscar una criptomoneda
@@ -95,27 +95,12 @@ def Processexchange(request):
     symbolAppen = []
     pricesAppen = []
     if request.method == 'GET':
-        prueba = request.GET['emails']
-        print(prueba)
+        prueba01 = request.GET['Have_Symbols']
+        prueba02 = request.GET['Have_amount']
+        prueba03 = request.GET['Want_Symbols']
+        I_Have = client.get_ws_endpoint(private=True) #get_full_order_book ('KCS-BTC')#.get_fiat_prices('Have_Symbols')
+        print("=======================")
+        print(I_Have)
+        print("===================")
 
-        ExchangePrice = "ExchangePrice"
-
-#    client = Client(api_key, api_secret, api_passphrase)
-#    tickets = client.get_fiat_prices("EUR")
-#    for coins in tickets:
-#        symbol = coins
-#        price = tickets[coins]
-#        symbolAppen.append(symbol)
-#        pricesAppen.append(price)
-#    Coin = Coins.objects.all()
-#    Seria = CoinsSerializers(Coin, many=True)
-#    return JsonResponse(Seria.data, safe=False)
-
-#        print(request.POST)
-#        HaveSymbols = 
-#        HaveAmount = 
-#        WantSymbols =
-#        WantAmount = 
- #   return HttpResponseRedirect('/thanks/')
-
-
+    return redirect('index')

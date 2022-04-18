@@ -9,7 +9,7 @@
 .visible{
     display: block;
 }
-#USDList, #EURList, #DOPList{
+#SymbolList, #USDList, #EURList, #DOPList{
     display: none;
 }
 

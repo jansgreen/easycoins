@@ -4,7 +4,7 @@
 // CREAMOS ELEMENTOS DINAMICO DE LOADING
 
 
-
+const spinnerLoadGray = document.getElementById('spinnerLoadingGray')
 const spinnerLoadBlue = document.getElementById('spinnerLoadingBlue')
 const spinnerLoadGreen = document.getElementById('spinnerLoadingGreen')
 const spinnerLoadYelow = document.getElementById('spinnerLoadingYelow')
@@ -12,6 +12,7 @@ const spinnerLoadYelow = document.getElementById('spinnerLoadingYelow')
 
 $(document).ready(function () {
     setTimeout(()=>{
+        spinnerLoadGray.classList.add('not-visible')
         spinnerLoadBlue.classList.add('not-visible')
         spinnerLoadGreen.classList.add('not-visible')
         spinnerLoadYelow.classList.add('not-visible')
@@ -20,6 +21,7 @@ $(document).ready(function () {
     },500);
 
     setTimeout(()=>{
+        document.getElementById('SymbolList').style.display = "block"
         document.getElementById('USDList').style.display = "block"
         document.getElementById('EURList').style.display = "block"
         document.getElementById('DOPList').style.display = "block"
