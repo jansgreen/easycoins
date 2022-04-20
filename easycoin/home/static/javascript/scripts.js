@@ -3,7 +3,6 @@
 
 // CREAMOS ELEMENTOS DINAMICO DE LOADING
 
-
 const spinnerLoadGray = document.getElementById('spinnerLoadingGray')
 const spinnerLoadBlue = document.getElementById('spinnerLoadingBlue')
 const spinnerLoadGreen = document.getElementById('spinnerLoadingGreen')
