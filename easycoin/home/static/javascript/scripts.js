@@ -37,6 +37,39 @@ var myModal = document.getElementById('exampleModal')
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
+
+
+
+
+const options = {method: 'GET', headers: {Accept: 'application/json'}};
+
+fetch("https://api.crypto.com/v2/public/get-ticker?instrument_name=BTC_USDT", options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+       
+
+/*
+fetch("http://api.exchangeratesapi.io/v1/convert?access_key=986123e277e6187d035fc216b900855d&from=USD&to=EUR&cantidad=25")
+.then(response => response.json())
+.then(data => {console.log(data);})
+.catch(error=> console.log(error))
+
+
+.then((data=>{
+  return data.json();
+})).then((data) => {console.log(data)
+}); 
+
+var exampleSocket = new WebSocket("wss:https://api-adapter.backend.currency.com/", ["protocolOne", "protocolTwo"]);
+
+
+exampleSocket.onopen = function (event) {
+  exampleSocket.send("Here's some text that the server is urgently awaiting!");
+};
+
+console.log(exampleSocket); */
+
 /*
 
 
